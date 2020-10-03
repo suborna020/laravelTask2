@@ -1,0 +1,30 @@
+
+#body_css{
+    color: white;
+    background-color: #3c8dbc;
+}
+a {
+color: white !important;
+}
+.breadcrumb-item.active {
+    color: white !important;
+}
+.content-wrapper{
+    color: white !important;
+
+}
+#profile_img{
+     border-radius: 50%;
+}
+.modal-content {
+   color: black !important;
+   width:60% !important;
+ }
+ 
+ #composeTextarea{
+     resize: none;
+}
+#center{
+    margin: 0 auto !important;
+     text-align: center;
+}

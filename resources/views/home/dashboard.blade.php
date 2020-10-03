@@ -8,7 +8,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0 text-dark">Inbox</h1>
+                    <h1 class="m-0">Inbox</h1>
                 </div><!-- /.col -->
                 <div class="col-sm-6">
 
@@ -25,8 +25,26 @@
     <!-- Main content -->
     <section class="content">
         <div class="container-fluid">
-            <h1 style="text-align: center; margin-top: 150px;">WELCOME to Inbox</h1>
             </>
+            <div class="inbox">
+                <hr style="background-color: #dbe2e6" ;>
+                <div class="">
+                    <img src="/user.jpg" alt="Avatar" style="width:40px" />
+                    <p>Hello. How are you today?</p>
+                    <span class="time-right">11:00</span>
+                </div>
+                <hr style="background-color: #dbe2e6" ;>
+                <div class="">
+                    <img src="/user.jpg" alt="Avatar" style="width:40px" />
+                    <p>what is this....................?</p>
+                    <span class="time-right">11:00</span>
+                </div>
+                <div class="">
+                    <img src="/user.jpg" alt="Avatar" style="width:40px" />
+                    <p>what is this....................?</p>
+                    <span class="time-right">11:00</span>
+                </div>
+            </div>
             <!-- /.row (main row) -->
         </div><!-- /.container-fluid -->
     </section>

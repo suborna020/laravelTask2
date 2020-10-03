@@ -30,10 +30,12 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
     {{-- table design link  --}}
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
+    {{-- myStyle sheet  --}}
+    <link href="/css/mystyle.css" rel=" stylesheet">
 
 </head>
 
-<body class="hold-transition sidebar-mini layout-fixed navbar-lightblue">
+<body class="hold-transition sidebar-mini layout-fixed navbar-lightblue" id="body_css">
     <div class="wrapper">
 
         <!-- left Navbar -->
@@ -53,7 +55,8 @@
                         </button>
                     </div>
                 </div>
-                <img src="img_avatar.png" alt="Avatar" style="width:40px; border-radius: 50%;">
+                &nbsp;&nbsp; &nbsp;&nbsp;|&nbsp;&nbsp; &nbsp;&nbsp;<img src="/user.jpg" alt="Avatar" id="profile_img"
+                    style="width:40px" />
             </form>
 
 
@@ -63,19 +66,22 @@
         <!-- /.navbar -->
 
         <!-- Main Sidebar Container -->
-        <aside class="main-sidebar  elevation-4" style="background-color:#144d76;">
+        <aside class=" main-sidebar elevation-4 " style="background-color:#144d76;">
             <!-- Brand Logo -->
-            <a href="#" class="brand-link">
+            <a href="#" id="" class="brand-link center">
 
                 <span class="brand-text font-weight-light">Logo</span>
             </a>
-            <a href="#" class="brand-link">
 
-                <button type="button" class="btn btn-info">Compose</button>
-            </a>
+            <div id="center">
+                <a class="btn btn-info" href="javascript:;" data-toggle="modal" data-target="#composeModal">
+                    Compose
+                </a>
+            </div>
+
 
             <!-- Sidebar -->
-            <div class="sidebar">
+            <div class=" sidebar">
                 <!-- Sidebar user panel (optional) -->
 
                 <!-- Sidebar Menu -->
@@ -108,13 +114,33 @@
                                 </p>
                             </a>
                         </li>
-                        <li class="nav-item">
+
+                        <li class="nav-item has-treeview menu-open">
                             <a href="{{ url('home/settings')}}" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
                                     Settings
+                                    <i class="right fas fa-angle-left"></i>
                                 </p>
                             </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        &nbsp;&nbsp; &nbsp;&nbsp;<p>Profile</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        &nbsp;&nbsp; &nbsp;&nbsp;<p>Privacy</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+
+                                        &nbsp;&nbsp; &nbsp;&nbsp;<p>Upload</p>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a href="{{ url('home/logout')}}" class=" nav-link" ">
@@ -137,6 +163,55 @@
 
         @yield('content')
         <!-- /.content-wrapper -->
+        <div class="modal fade " role="dialog" id="composeModal">
+            <div class="modal-dialog modal-lg">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">New Message</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="{{ url('#') }}" class="database_operation">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <input type="text" required="required" name="question"
+                                            placeholder="From :   demo@mail.com" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <input type="text" required="required" name="question"
+                                            placeholder="To :   demo@mail.com" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <input type="text" required="required" name="question" placeholder="Subject"
+                                            class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+
+                                        <textarea id="composeTextarea" class="form-control" rows="3"
+                                            placeholder=" Details"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <button class="btn btn-primary">SEND</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
         <footer>
 
 
@@ -148,7 +223,7 @@
         </aside>
         <!-- /.control-sidebar -->
     </div>
-    <!-- ./wrapper -->
+
 
     <!-- jQuery -->
     <script src="{{url('assets/plugins/jquery/jquery.min.js')}}"></script>
