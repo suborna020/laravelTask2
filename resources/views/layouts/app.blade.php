@@ -32,6 +32,12 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
     {{-- myStyle sheet  --}}
     <link href="/css/mystyle.css" rel=" stylesheet">
+    {{-- for check box icon --}}
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+    {{-- for refresh icon --}}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    {{-- Montserrat front adding --}}
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 
 </head>
 
@@ -46,8 +52,8 @@
             {{-- <x-header /> --}}
             <form class="form-inline ml-3">
                 <div class="input-group input-group-sm">
-                    <input class="form-control form-control-navbar" type="search" placeholder="Search"
-                        aria-label="Search" size="140">
+                    <input class="form-control form-control-navbar" type="search" placeholder="Search emails"
+                        aria-label="Search" size="110">
 
                     <div class="input-group-append">
                         <button class="btn btn-navbar" type="submit">
@@ -55,10 +61,9 @@
                         </button>
                     </div>
                 </div>
-                &nbsp;&nbsp; &nbsp;&nbsp;|&nbsp;&nbsp; &nbsp;&nbsp;<img src="/user.jpg" alt="Avatar" id="profile_img"
-                    style="width:40px" />
+                &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
             </form>
-
+            <img src="/user.jpg" alt="Avatar" id="profile_img" style="width:40px" class="float-right" />
 
             <!-- Right navbar links -->
 
@@ -66,15 +71,16 @@
         <!-- /.navbar -->
 
         <!-- Main Sidebar Container -->
-        <aside class=" main-sidebar elevation-4 " style="background-color:#144d76;">
+        <aside class=" main-sidebar elevation-4 " style="background-color:#213F7E;">
             <!-- Brand Logo -->
             <a href="#" id="" class="brand-link center">
 
-                <span class="brand-text font-weight-light">Logo</span>
+                <span class="">LOGO</span>
             </a>
 
             <div id="center">
-                <a class="btn btn-info" href="javascript:;" data-toggle="modal" data-target="#composeModal">
+                <a class="btn btn-info" href="javascript:;" data-toggle="modal" data-target="#composeModal" style="
+    border-radius:0px !important;">
                     Compose
                 </a>
             </div>
@@ -92,7 +98,6 @@
                with font-awesome or any other icon font library -->
                         <li class="nav-item">
                             <a href="{{ url('home')}}" class="nav-link">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
                                     Inbox
                                 </p>
@@ -100,7 +105,6 @@
                         </li>
                         <li class="nav-item">
                             <a href="{{ url('home/outbox')}}" class="nav-link">
-                                <i class="nav-icon fas fa-th"></i>
                                 <p>
                                     Outbox
                                 </p>
@@ -108,16 +112,15 @@
                         </li>
                         <li class="nav-item">
                             <a href="{{ url('home/sent')}}" class="nav-link">
-                                <i class="nav-icon fas fa-th"></i>
                                 <p>
                                     Sent
                                 </p>
                             </a>
                         </li>
 
-                        <li class="nav-item has-treeview menu-open">
+                        <li class="nav-item has-treeview menu-off">
                             <a href="{{ url('home/settings')}}" class="nav-link">
-                                <i class="nav-icon fas fa-th"></i>
+
                                 <p>
                                     Settings
                                     <i class="right fas fa-angle-left"></i>
@@ -144,7 +147,7 @@
                         </li>
                         <li class="nav-item">
                             <a href="{{ url('home/logout')}}" class=" nav-link" ">
-                                <i class=" nav-icon fas fa-th"></i>
+                                
                                 Logout
                             </a>
 
@@ -163,65 +166,66 @@
 
         @yield('content')
         <!-- /.content-wrapper -->
-        <div class="modal fade " role="dialog" id="composeModal">
-            <div class="modal-dialog modal-lg">
+        <div class=" modal fade " role=" dialog" id="composeModal">
+                                <div class="modal-dialog modal-lg">
 
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">New Message</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="{{ url('#') }}" class="database_operation">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <input type="text" required="required" name="question"
-                                            placeholder="From :   demo@mail.com" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <input type="text" required="required" name="question"
-                                            placeholder="To :   demo@mail.com" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <input type="text" required="required" name="question" placeholder="Subject"
-                                            class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-sm-12">
-                                    <div class="form-group">
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">New Message</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form action="{{ url('#') }}" class="database_operation">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <div class="form-group">
+                                                            <input type="text" required="required" name="question"
+                                                                placeholder="From :   demo@mail.com"
+                                                                class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <div class="form-group">
+                                                            <input type="text" required="required" name="question"
+                                                                placeholder="To :   demo@mail.com" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <div class="form-group">
+                                                            <input type="text" required="required" name="question"
+                                                                placeholder="Subject" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <div class="form-group">
 
-                                        <textarea id="composeTextarea" class="form-control" rows="3"
-                                            placeholder=" Details"></textarea>
+                                                            <textarea id="composeTextarea" class="form-control" rows="3"
+                                                                placeholder=" Details"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <div class="form-group">
+                                                            <button class="btn btn-primary">SEND</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <button class="btn btn-primary">SEND</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
 
+                                </div>
             </div>
-        </div>
-        <footer>
+            <footer>
 
 
-        </footer>
+            </footer>
 
-        <!-- Control Sidebar -->
-        <aside class="control-sidebar control-sidebar-dark">
-            <!-- Control sidebar content goes here -->
-        </aside>
-        <!-- /.control-sidebar -->
+            <!-- Control Sidebar -->
+            <aside class="control-sidebar control-sidebar-dark">
+                <!-- Control sidebar content goes here -->
+            </aside>
+            <!-- /.control-sidebar -->
     </div>
 
 

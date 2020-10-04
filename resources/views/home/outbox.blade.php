@@ -22,28 +22,60 @@
     <!-- /.content-header -->
     <section class="content" id="text-right">
         <div class="container-fluid">
+
             </>
-            <div class="inbox">
-                <hr style="background-color: #dbe2e6" ;>
-                <div class="msg_box">
-                    <img src="/user.jpg" alt="Avatar" style="width:40px" />
-                    <p>Hello. How are you today?</p>
-                    <p id="msg_time">11:00</p>
+            <input type="checkbox">
+            {{-- <i class="material-icons">&#xe5d5;</i> --}}
+            <span class="refresh">↻</span>
+            {{-- <i class="material-icons">&#xe5d5;</i> --}}
+            <div class="container-fluid inbox">
+                <div class="row msg_box unread_msg">
+                    <div class=" col-sm-1" style="max-width: 5.333333% !important;"><img src="/user.jpg" alt="Avatar"
+                            style="width:40px;border-radius: 30%;" /></div>
+                    <div class="col-sm-10" style="">
+                        <h3>Mr.robin</h3>
+                    </div>
+                    <div class="col-sm-1 msg_time" style="">
+                        11:00
+                    </div>
+                    <div class="" style="padding-left: 65px;">
+                        Hello. How are you today?Hello. How are you today?
+                    </div>
 
                 </div>
                 <hr style="background-color: #dbe2e6" ;>
-                <div class="msg_box">
-                    <img src="/user.jpg" alt="Avatar" style="width:40px" />
-                    <p>what is this....................?</p>
-                    <p id="msg_time">11:00</p>
+                <div class="row msg_box unread_msg">
+                    <div class=" col-sm-1" style="max-width: 5.333333% !important;"><img src="/user.jpg" alt="Avatar"
+                            style="width:40px;border-radius: 30%;" /></div>
+                    <div class="col-sm-10" style="">
+                        <h3>Mr.robin</h3>
+                    </div>
+                    <div class="col-sm-1 msg_time" style="">
+                        11:00
+                    </div>
+                    <div class="" style="padding-left: 65px;">
+                        Hello. How are you today?Hello. How are you today?
+                    </div>
+
                 </div>
-                <div class="msg_box">
-                    <img src="/user.jpg" alt="Avatar" style="width:40px" />
-                    <p>what is this....................?</p>
-                    <p id="msg_time">11:00</p>
+                <hr style="background-color: #dbe2e6" ;>
+                <div class="row msg_box ">
+                    <div class=" col-sm-1" style="max-width: 5.333333% !important;"><img src="/user.jpg" alt="Avatar"
+                            style="width:40px;border-radius: 30%;" /></div>
+                    <div class="col-sm-10" style="">
+                        <h3>Mr.robin</h3>
+                    </div>
+                    <div class="col-sm-1 msg_time" style="">
+                        11:00
+                    </div>
+                    <div class="" style="padding-left: 65px;">
+                        Hello. How are you today?Hello. How are you today?
+                    </div>
+
                 </div>
+                <hr style="background-color: #dbe2e6" ;>
             </div>
-            <!-- /.row (main row) -->
+
         </div><!-- /.container-fluid -->
     </section>
 </div>

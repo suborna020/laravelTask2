@@ -1,1 +1,34 @@
 intitial commit
+Website name :
+suborna020
+pass: RQpPl$Fgf7AiKO^pKh*#
+Database name:id15032430_laraveltask2
+Database username:id15032430_suborna020
+pass: RQpPl$Fgf7AiKO^pKh*#
+DB Host: localhost
+APP_KEY=base64:fwjyQOG3PQjwkLfCg9T1aICdE52X9pckSzgPY+7I3Hg=
+
+$app->bind('path.public',function(){
+return_DIR_;
+});
+base64_decode('fwjyQOG3PQjwkLfCg9T1aappliICdE52X9pckSzgPY+7I3Hg='))
+'mysql' => [
+'driver' => 'mysql',
+'url' => env('DATABASE_URL'),
+'host' => env('DB_HOST', 'localhost'),
+'port' => env('DB_PORT', '3306'),
+'database' => env('DB_DATABASE', 'id15032430_laraveltask2'),
+'username' => env('DB_USERNAME', 'id15032430_suborna020'),
+'password' => env('DB_PASSWORD', 'RQpPl$Fgf7AiKO^pKh*#'),
+'unix_socket' => env('DB_SOCKET', ''),
+'charset' => 'utf8mb4',
+'collation' => 'utf8mb4_unicode_ci',
+'prefix' => '',
+'prefix_indexes' => true,
+'strict' => true,
+'engine' => null,
+'options' => extension_loaded('pdo_mysql') ? array_filter([
+PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+]) : [],
+'options' => [PDO::ATTR_EMULATE_PREPARES => true],
+],
