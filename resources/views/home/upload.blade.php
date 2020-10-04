@@ -8,12 +8,12 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0">Settings</h1>
+                    <h1 class="m-0">Upload</h1>
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active">Settings </li>
+                        <li class="breadcrumb-item active">Upload </li>
                     </ol>
                 </div><!-- /.col -->
             </div><!-- /.row -->
@@ -22,9 +22,22 @@
     <!-- /.content-header -->
     <section class="content">
         <div class="container-fluid">
-            <div class="row">
 
-            </div>
+
+
+            <form class="md-form">
+                <div class="file-field">
+                    <div class="btn btn-primary btn-sm float-left">
+                        <span>Choose file</span>
+                        <input type="file">
+                    </div>
+                    <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text" placeholder="Upload your file">
+                    </div>
+                </div>
+            </form>
+
+
         </div>
     </section>
 </div>

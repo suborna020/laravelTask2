@@ -23,31 +23,33 @@
     <!-- /.content-header -->
 
     <!-- Main content -->
-    <section class="content">
+    <section class="content" id="text-right">
         <div class="container-fluid">
             </>
             <div class="inbox">
                 <hr style="background-color: #dbe2e6" ;>
-                <div class="">
+                <div class="msg_box">
                     <img src="/user.jpg" alt="Avatar" style="width:40px" />
                     <p>Hello. How are you today?</p>
-                    <span class="time-right">11:00</span>
+                    <p id="msg_time">11:00</p>
+
                 </div>
                 <hr style="background-color: #dbe2e6" ;>
-                <div class="">
+                <div class="msg_box">
                     <img src="/user.jpg" alt="Avatar" style="width:40px" />
                     <p>what is this....................?</p>
-                    <span class="time-right">11:00</span>
+                    <p id="msg_time">11:00</p>
                 </div>
-                <div class="">
+                <div class="msg_box">
                     <img src="/user.jpg" alt="Avatar" style="width:40px" />
                     <p>what is this....................?</p>
-                    <span class="time-right">11:00</span>
+                    <p id="msg_time">11:00</p>
                 </div>
             </div>
             <!-- /.row (main row) -->
         </div><!-- /.container-fluid -->
     </section>
+
     <!-- /.content -->
 </div>
 @endsection

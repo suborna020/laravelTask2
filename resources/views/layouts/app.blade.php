@@ -125,17 +125,17 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="{{ url('home/settings/profile')}}" class="nav-link">
                                         &nbsp;&nbsp; &nbsp;&nbsp;<p>Profile</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="{{ url('home/settings/privacy')}}" class="nav-link">
                                         &nbsp;&nbsp; &nbsp;&nbsp;<p>Privacy</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="{{ url('home/settings/upload')}}" class="nav-link">
 
                                         &nbsp;&nbsp; &nbsp;&nbsp;<p>Upload</p>
                                     </a>

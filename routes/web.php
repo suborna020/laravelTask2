@@ -28,3 +28,6 @@ Route::get('/home/outbox', [HomeController::class, 'outbox']);
 Route::get('/home/sent', [HomeController::class, 'sent']);
 Route::get('/home/settings', [HomeController::class, 'settings']);
 Route::get('/home/logout', [HomeController::class, 'logout']);
+Route::get('home/settings/profile', [HomeController::class, 'profile']);
+Route::get('home/settings/privacy', [HomeController::class, 'privacy']);
+Route::get('home/settings/upload', [HomeController::class, 'upload']);

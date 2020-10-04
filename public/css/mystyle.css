@@ -12,7 +12,9 @@ color: white !important;
 .content-wrapper{
     color: white !important;
 
+    
 }
+
 #profile_img{
      border-radius: 50%;
 }
@@ -27,4 +29,22 @@ color: white !important;
 #center{
     margin: 0 auto !important;
      text-align: center;
+}
+/* msg box show */
+.msg_box:nth-of-type(odd) {
+background-color:#144d76;
+}
+    
+.msg_box:nth-of-type(even) {
+background-color:#3c8dbc;
+}
+
+.msg_box {
+border: 1px solid rgb(83, 81, 90);
+border-radius: 10px;
+margin: 3px;
+}
+
+#text-right>div #msg_time{
+    text-align: right !important;
 }
