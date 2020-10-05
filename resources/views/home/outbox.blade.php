@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('title','Mail System')
 @section('content')
-
+@include('home.navbar')
 <div class="content-wrapper navbar-lightblue">
     <!-- Content Header (Page header) -->
     <div class="content-header">

@@ -17,7 +17,9 @@ margin-left: 205px !important;
 body:not(.sidebar-mini-md) .content-wrapper, body:not(.sidebar-mini-md) .main-footer, body:not(.sidebar-mini-md) .main-header{
     transition: margin-left .3s ease-in-out;
     margin-left: 190px !important;
+    border-bottom: 1px solid #213F7E !important;
 }
+
 
 a {
 color: white !important;

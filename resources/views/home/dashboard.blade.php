@@ -2,6 +2,7 @@
 @section('title','Mail System')
 @section('content')
 <!-- Content Wrapper. Contains page content -->
+@include('home.navbar')
 
 <div class="content-wrapper navbar-lightblue">
     <!-- Content Header (Page header) -->
