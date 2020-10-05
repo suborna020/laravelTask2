@@ -44,9 +44,7 @@
 <body class="hold-transition sidebar-mini layout-fixed navbar-lightblue" id="body_css">
     <div class="wrapper">
 
-        <!-- left Navbar -->
         <nav class="main-header navbar navbar-expand navbar-lightblue navbar-light">
-
 
             <!-- SEARCH FORM -->
             {{-- <x-header /> --}}

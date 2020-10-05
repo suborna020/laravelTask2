@@ -18,8 +18,8 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 Route::get('/', function () {
-    //return view('welcome');
-    return redirect("home");
+    return view('welcome');
+    //return redirect("home");
 });
 
 Route::get('/home', [HomeController::class, 'inbox']);
