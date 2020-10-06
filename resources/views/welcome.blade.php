@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <title>Mail System</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     {{-- Montserrat front adding --}}
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <style>
@@ -131,7 +134,7 @@ Name</pre>
                     <label for="psw"><b>Password</b></label>
                     <input type="password" placeholder="Enter Password" name="psw" required>
 
-                    <button onclick="window.location.href='/home'" type="submit">SIGN IN</button>
+                    <button onclick="window.location.href='/home/dashboard'" type="submit">SIGN IN</button>
 
 
                 </div>

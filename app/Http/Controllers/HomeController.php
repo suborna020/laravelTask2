@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function inbox()
+    public function dashboard()
     {
         // echo url('');
         // die();
@@ -14,14 +14,10 @@ class HomeController extends Controller
     }
     public function outbox()
     {
-        // echo url('');
-        // die();
         return view('home.outbox');
     }
     public function sent()
     {
-        // echo url('');
-        // die();
         return view('home.sent');
     }
     public function settings()
@@ -43,5 +39,11 @@ class HomeController extends Controller
     public function upload()
     {
         return view('home.upload');
+    }
+    public function dashboard_copy()
+    {
+        // echo url('');
+        // die();
+        return view('home.dashboard_copy');
     }
 }

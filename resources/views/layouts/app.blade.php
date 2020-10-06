@@ -28,10 +28,8 @@
     <link rel="stylesheet" href="{{url('assets/plugins/summernote/summernote-bs4.css')}}">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-    {{-- table design link  --}}
-    {{-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css"> --}}
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
     {{-- myStyle sheet  --}}
     <link href="/css/mystyle.css" rel=" stylesheet">
     {{-- for check box icon --}}
@@ -40,10 +38,14 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     {{-- Montserrat front adding --}}
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    {{-- table design link  --}}
+    {{-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css"> --}}
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed navbar-lightblue" id="body_css">
+
     <div class="wrapper ">
 
         <img src="/user.jpg" alt="Avatar" id="profile_img" style="width:40px" class="float-right" />
@@ -76,7 +78,7 @@
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                         <li class="nav-item">
-                            <a href="{{ url('home')}}" class="nav-link">
+                            <a href="{{ url('home/dashboard')}}" class="nav-link">
                                 <p>
                                     Inbox
                                 </p>
@@ -243,6 +245,7 @@
     <script src="{{url('assets/dist/js/pages/dashboard.js')}}"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="{{url('assets/dist/js/demo.js')}}"></script>
+
     <!-- my js file link -->
     <script src="{{url('assets/js/custom.js')}}"></script>
     {{-- table design link --}}
