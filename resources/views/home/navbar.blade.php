@@ -1,4 +1,4 @@
-<nav class="main-header navbar navbar-expand navbar-lightblue navbar-light">
+<nav style="margin-top: -27rem;" class="main-header navbar navbar-expand navbar-lightblue navbar-light">
 
     <!-- SEARCH FORM -->
     {{-- <x-header /> --}}
