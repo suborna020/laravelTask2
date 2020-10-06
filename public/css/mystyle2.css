@@ -1,0 +1,14 @@
+#profile_img{
+     border-radius: 50%;
+}
+.form-inline .custom-select, .form-inline .input-group {
+    width: 900px;
+}
+.content-wrapper>.content {
+            padding: 0 !important;
+            margin: 0px !important;
+        }
+.content-wrapper, body:not(.sidebar-mini-md) .main-footer, body:not(.sidebar-mini-md) .main-header {
+    transition: margin-left .3s ease-in-out;
+    margin-left: 195px;
+}

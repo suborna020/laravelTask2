@@ -1,4 +1,5 @@
 @extends('layouts.app_copy')
+@section('title','Mail System')
 @section('content-copy')
 
 
