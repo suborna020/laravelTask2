@@ -1,5 +1,8 @@
-
+* {
+            margin: 0 !important;
+        }
 #body_css{
+    
     color: white;
     background-color: #4195D1 !important;
     font-family: 'Montserrat'!important;
