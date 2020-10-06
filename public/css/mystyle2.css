@@ -17,3 +17,12 @@
     margin-left: 190px !important;
   
 }
+
+/* ////////////////////////////For normal style/////////// */
+.text_white{
+    color: white;
+}
+#center{
+    margin: 0 auto !important;
+     text-align: center;
+}
