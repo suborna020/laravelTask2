@@ -115,7 +115,7 @@
                         data-accordion="false">
 
                         <li class="nav-item">
-                            <a href="{{ url('home/dashboard')}}" class="nav-link">
+                            <a href="{{ url('home')}}" class="nav-link">
                                 <p>
                                     Inbox
                                 </p>

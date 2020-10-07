@@ -22,7 +22,7 @@ Route::get('/', function () {
     //return redirect("home");
 });
 
-Route::get('/home/dashboard', [HomeController::class, 'dashboard']);
+Route::get('/home', [HomeController::class, 'home']);
 Route::get('/home/outbox', [HomeController::class, 'outbox']);
 Route::get('/home/sent', [HomeController::class, 'sent']);
 Route::get('/home/settings', [HomeController::class, 'settings']);

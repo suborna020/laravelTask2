@@ -134,7 +134,7 @@ Name</pre>
                     <label for="psw"><b>Password</b></label>
                     <input type="password" placeholder="Enter Password" name="psw" required>
 
-                    <button onclick="window.location.href='/home/dashboard'" type="submit">SIGN IN</button>
+                    <button onclick="window.location.href='/home'" type="submit">SIGN IN</button>
 
 
                 </div>
