@@ -1,32 +1,54 @@
 @extends('layouts.app')
 @section('title','Mail System')
+<nav class="main-header navbar navbar-expand navbar-white navbar-light" style="background-color: #213F7E;">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+    </ul>
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+        <!-- Messages Dropdown Menu -->
+
+        <!-- Notifications Dropdown Menu -->
+        <li class="nav-item">
+
+            <div class="text_white" style="font-size: 20px;">
+                &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+            </div>
+        </li>
+        <li class="nav-item">
+            <img src="/user.jpg" alt="Avatar" id="profile_img" style="width:40px" class="float-right" />
+        </li>
+    </ul>
+</nav>
 @section('content')
-<!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper navbar-lightblue">
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
-        <div class="container-fluid">
-            <div class="row mb-2">
-                <div class="col-sm-6">
-                    <h1 class="m-0"></h1>
-                </div><!-- /.col -->
-                <div class="col-sm-6">
-                    <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="#"></a></li>
-                        <li class="breadcrumb-item active"> </li>
-                    </ol>
-                </div><!-- /.col -->
-            </div><!-- /.row -->
-        </div><!-- /.container-fluid -->
-    </div>
-    <!-- /.content-header -->
+<div class="content-wrapper" style="background-color:white;">
+    <!-- Main content -->
     <section class="content">
-        <div class="container-fluid">
-            <div class="row">
+        <div class="row">
+            <div class="col-md-12" style="margin: auto !important ;">
+
+                <div class="card" style="padding: 246px;padding-top: 30px;">
+                    <div class="card-body ">
+
+
+
+
+
+
+
+
+                    </div>
+                    <!-- /.login-card-body -->
+                </div>
 
             </div>
         </div>
-    </section>
+
+
 </div>
 
+
+</section>
+<!-- /.content -->
+</div>
 @endsection

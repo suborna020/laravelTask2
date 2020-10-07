@@ -40,10 +40,4 @@ class HomeController extends Controller
     {
         return view('home.upload');
     }
-    public function dashboard_copy()
-    {
-        // echo url('');
-        // die();
-        return view('home.dashboard_copy');
-    }
 }
