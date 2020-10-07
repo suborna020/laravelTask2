@@ -6,34 +6,99 @@
 
 <div class="content-wrapper navbar-lightblue">
     <!-- Content Header (Page header) -->
-    <div class="content-header">
+    <section class="content">
         <div class="container-fluid">
-            <div class="row mb-2">
-                <div class="col-sm-6">
-                    <h1 class="m-0"></h1>
-                </div><!-- /.col -->
-                <div class="col-sm-6">
+            <!-- Main row -->
+            <div class="row">
+                <!-- Left col -->
+                <section class="col-lg-12 connectedSortable">
+                    <!-- TO DO List -->
+                    <div class="card">
+                        <div class="msg_card_header" style="cursor: default !important;">
+                            <div class="card-tools" style="float: left;">
+                                <input type="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;
+                                {{-- <i class="material-icons">&#xe5d5;</i> --}}
+                                <span class="refresh">↻</span>
+                            </div>
+                            <div class="card-tools" style="float: right;">
+                                <ul class="pagination pagination-sm">
+                                    <li class="page-item"><a href="#" class="page-link">&laquo;</a></li>
+                                    <li class="page-item"><a href="#" class="page-link">1</a></li>
+                                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                                    <li class="page-item"><a href="#" class="page-link">&raquo;</a></li>
+                                </ul>
+                            </div>
+                        </div>
 
-                    <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active">Inbox</li>
-                    </ol>
-                </div><!-- /.col -->
-            </div><!-- /.row -->
+
+                    </div>
+                    <div class="cart-body inbox">
+                        <div class="row msg_box unread_msg">
+                            <div class=" col-sm-1" style="max-width: 5.333333% !important;"><img src="/user.jpg"
+                                    alt="Avatar" style="width:40px;border-radius: 30%;" />
+                            </div>
+                            <div class="col-sm-10" style="">
+
+                                <h3>Mr.robin</h3>
+                            </div>
+                            <div class="col-sm-1 msg_time" style="">
+                                11:00
+                            </div>
+                            <div class="" style="padding-left: 65px;">
+                                Hello. How are you today?Hello. How are you today?
+                            </div>
+
+                        </div>
+                        <hr style="background-color: #dbe2e6" ;>
+                        <div class="row msg_box unread_msg">
+                            <div class=" col-sm-1" style="max-width: 5.333333% !important;"><img src="/user.jpg"
+                                    alt="Avatar" style="width:40px;border-radius: 30%;" /></div>
+                            <div class="col-sm-10" style="">
+                                <h3>Mr.robin</h3>
+                            </div>
+                            <div class="col-sm-1 msg_time" style="">
+                                11:00
+                            </div>
+                            <div class="" style="padding-left: 65px;">
+                                Hello. How are you today?Hello. How are you today?
+                            </div>
+
+                        </div>
+                        <hr style="background-color: #dbe2e6" ;>
+                        <div class="row msg_box ">
+                            <div class=" col-sm-1" style="max-width: 5.333333% !important;"><img src="/user.jpg"
+                                    alt="Avatar" style="width:40px;border-radius: 30%;" /></div>
+                            <div class="col-sm-10" style="">
+                                <h3>Mr.robin</h3>
+                            </div>
+                            <div class="col-sm-1 msg_time" style="">
+                                11:00
+                            </div>
+                            <div class="" style="padding-left: 65px;">
+                                Hello. How are you today?Hello. How are you today?
+                            </div>
+
+                        </div>
+                        <hr style="background-color: #dbe2e6" ;>
+                    </div>
+                    <!-- /.card -->
+                </section>
+
+            </div>
+            <!-- /.row (main row) -->
         </div><!-- /.container-fluid -->
-    </div>
+    </section>
     <!-- /.content-header -->
 
     <!-- Main content -->
-
     <section class="content" id="text-right">
         <div class="container-fluid">
 
             </>
             <input type="checkbox">
-            {{-- <i class="material-icons">&#xe5d5;</i> --}}
+
             <span class="refresh">↻</span>
-            {{-- <i class="material-icons">&#xe5d5;</i> --}}
+
             <div class="container-fluid inbox">
                 <div class="row msg_box unread_msg">
                     <div class=" col-sm-1" style="max-width: 5.333333% !important;"><img src="/user.jpg" alt="Avatar"

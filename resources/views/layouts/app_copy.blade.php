@@ -38,8 +38,10 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     {{-- table design link  --}}
-    {{-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css"> --}}
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
+
     <link href="/css/mystyle2.css" rel=" stylesheet">
     <style>
         .row {}
@@ -58,11 +60,11 @@
             </ul>
 
             <!-- SEARCH FORM -->
-            <form class="form-inline ml-0">
+            <form class="form-inline ml-0" style="margin-left: 18px!important;">
                 <div class="input-group input-group-sm">
 
                     <input class="form-control form-control-navbar" type="search" placeholder="Search Emails"
-                        aria-label="Search">
+                        aria-label="Search" style="width: 107%;">
 
                 </div>
             </form>
@@ -72,9 +74,9 @@
                 <!-- Messages Dropdown Menu -->
 
                 <!-- Notifications Dropdown Menu -->
-                <li class="nav-item ">
+                <li class="nav-item">
 
-                    <div class="text_white">
+                    <div class="text_white" style="font-size: 20px;">
                         &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
                     </div>
                 </li>
@@ -103,7 +105,7 @@
                 </div>
                 <div id="center">
                     <a class="btn btn-info" href="javascript:;" data-toggle="modal" data-target="#composeModal"
-                        style="border-radius:0px !important;">
+                        style="border-radius:0px !important;color: white !important;">
                         Compose
                     </a>
                 </div>
@@ -178,10 +180,10 @@
             </div>
             <!-- /.sidebar -->
         </aside>
-
-        @yield('content-copy')
-        <!-- /.content-wrapper -->
-        <footer class=" main-footer">
+            
+            @yield('content-copy')
+            <!-- /.content-wrapper -->
+            <footer class=" main-footer">
 
                                 </footer>
 
@@ -230,6 +232,7 @@
 
             <!-- my js file link -->
             <script src="{{url('assets/js/custom.js')}}"></script>
+            <script src="/js/myjs.js"></script>
             {{-- table design link --}}
             <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js">
             </script>

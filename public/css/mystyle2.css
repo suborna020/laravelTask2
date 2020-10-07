@@ -14,15 +14,54 @@
 }
 .content-wrapper, body:not(.sidebar-mini-md) .main-footer, body:not(.sidebar-mini-md) .main-header {
     transition: margin-left .3s ease-in-out;
-    margin-left: 190px !important;
+    margin-left: 188px !important;
   
 }
 
 /* ////////////////////////////For normal style/////////// */
+* {
+            margin: 0 !important;
+        }
+body{
+            background-color: white;
+            font-family: 'Montserrat'!important;
+            font-size: 12px;
+        }
 .text_white{
     color: white;
 }
 #center{
     margin: 0 auto !important;
      text-align: center;
+}
+/* //////////////////////////// */
+
+div.msg_card_header {
+    background-color: white !important;
+    border-style:none !important;
+    border: none !important;
+    padding: 20px;
+}
+div.card {
+    border-style:none !important;
+    border: none !important;
+}
+div.inbox{
+}
+div.msg_box {
+    padding-top: 10px;
+      margin-top: 20px !important;
+}
+div.unread_msg {
+background-color:#b0e2f1;
+}
+hr {
+    background-color: #31a4a4;
+    width: 95%;
+    text-align: center;
+    margin: 0 auto !important;
+    border-width: thick;
+    border-top: 2px solid #a9bebe;
+    
+      margin-top: 15px !important;
 }
