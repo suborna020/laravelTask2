@@ -17,16 +17,18 @@
             width: 100%;
             font-family: 'Montserrat' !important;
             font-size: 12px;
-            background-repeat: no-repeat, repeat;
-            background-image: url("img/Path 424.svg");
         }
 
 
         .clo_1 {
             float: left;
-            width: 50%;
-            height: 633px;
+            width: 60%;
+            height: 100%;
             color: white;
+            position: absolute;
+            background-repeat: no-repeat, repeat;
+            background-image: url("img/Path 424.svg");
+            background-position-x: right;
 
         }
 
@@ -36,23 +38,18 @@
             width: 45%;
             text-align: center;
             margin: auto;
-            margin-top: 200px;
+            margin-top: 70px;
             padding: 10px;
         }
 
-        .clo_1_bottom {
-            position: fixed;
-            bottom: 12px;
-            width: 40%;
-            margin-left: 50px;
 
-        }
 
         .clo_2 {
-            float: left;
-            width: 50%;
+            float: right;
+            width: 40%;
             height: 633px;
             color: black;
+            height: 100%;
         }
 
         /* signin form  */
@@ -111,16 +108,14 @@ Name</pre>
                 There are many variations of passages of Lorem Ipsum available.but the majority have suffered alteration
                 in
                 some form by injected humour , or randomised words which don't look even slightly believable.
+                <div class="img_div" style="bottom: 0;right: 12px;position: absolute;">
+                    <img src="img/Group 255.svg" alt="Snow" style="width:70%;">
+
+                </div>
 
             </div>
 
-            <div class="clo_1_bottom">
-                <b>
-                    <p>SKIP</p>
-                    <p style="text-align: right;">NEXT</p>
-                </b>
 
-            </div>
         </div>
         <div class="clo_2">
             <form method="">
