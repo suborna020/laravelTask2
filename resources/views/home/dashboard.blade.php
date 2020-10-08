@@ -22,7 +22,7 @@
             </div>
         </li>
         <li class="nav-item">
-            <img src="/user.jpg" alt="Avatar" id="profile_img" style="width:40px" class="float-right" />
+            <img src="img/Group 99.svg" alt="Avatar" id="profile_img" style="width:40px" class="float-right" />
         </li>
     </ul>
 </nav>
@@ -41,8 +41,6 @@
             </div><!-- /.row -->
         </div><!-- /.container-fluid -->
     </div>  --}}
-    <!-- /.content-header -->
-
     <!-- Main content -->
     <section class="content">
         <div class="row">
@@ -67,8 +65,8 @@
                     <!-- /.card-body -->
                     <div class="cart-body inbox ">
                         <div class="row msg_box unread_msg">
-                            <div class=" col-sm-1" style="max-width: 5.333333% !important;"><img src="/user.jpg"
-                                    alt="Avatar" style="width:40px;border-radius: 30%;" />
+                            <div class=" col-sm-1" style="max-width: 5.333333% !important;">
+                                <img src="img/Group 99.svg" alt="Avatar" style="width:40px;border-radius: 30%;" />
                             </div>
                             <div class="col-sm-10" style="">
 
@@ -84,7 +82,7 @@
                         </div>
                         <hr style=""">
                        <div class=" row msg_box unread_msg">
-                        <div class=" col-sm-1" style="max-width: 5.333333% !important;"><img src="/user.jpg"
+                        <div class=" col-sm-1" style="max-width: 5.333333% !important;"><img src="img/Group 99.svg"
                                 alt="Avatar" style="width:40px;border-radius: 30%;" />
                         </div>
                         <div class="col-sm-10" style="">
@@ -101,8 +99,8 @@
                     </div>
                     <hr style=""">
                     <div class=" row msg_box ">
-                    <div class=" col-sm-1" style="max-width: 5.333333% !important;"><img src="/user.jpg" alt="Avatar"
-                        style="width:40px;border-radius: 30%;" />
+                    <div class=" col-sm-1" style="max-width: 5.333333% !important;"><img src="img/Group 99.svg"
+                        alt="Avatar" style="width:40px;border-radius: 30%;" />
                 </div>
                 <div class="col-sm-10" style="">
 
@@ -127,6 +125,7 @@
 
 
     </section>
+    
     <!-- /.content -->
 </div>
 @endsection

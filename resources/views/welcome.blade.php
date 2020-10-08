@@ -17,17 +17,16 @@
             width: 100%;
             font-family: 'Montserrat' !important;
             font-size: 12px;
-            color: white;
-
+            background-repeat: no-repeat, repeat;
+            background-image: url("img/Path 424.svg");
         }
 
 
         .clo_1 {
             float: left;
             width: 50%;
-            background-color: #213F7E;
             height: 633px;
-
+            color: white;
 
         }
 
@@ -52,8 +51,8 @@
         .clo_2 {
             float: left;
             width: 50%;
-            background-color: #4195D1;
             height: 633px;
+            color: black;
         }
 
         /* signin form  */
@@ -95,7 +94,7 @@
         }
 
         a {
-            color: white !important;
+            color: black !important;
         }
     </style>
 </head>
@@ -124,7 +123,7 @@ Name</pre>
             </div>
         </div>
         <div class="clo_2">
-            <form action="/action_page.php" method="post">
+            <form method="">
 
                 <h2 style="text-align: center">SIGN IN</h2>
                 <div class="form_container">

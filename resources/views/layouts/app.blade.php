@@ -41,7 +41,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     {{-- table design link  --}}
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
-
+    {{-- my own sheet --}}
     <link href="/css/mystyle.css" rel=" stylesheet">
     <style>
         .row {}
@@ -49,7 +49,10 @@
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
+
     <div class="wrapper">
+
+
 
         <!-- Navbar -->{{-- @include('home.navbar') --}}
         {{-- <nav class="main-header navbar navbar-expand navbar-white navbar-light" style="background-color: #213F7E;">
@@ -98,12 +101,9 @@
                     <div class="info">
                         <a href="#" class="d-block">LOGO</a>
                     </div>
-
-
-
                 </div>
                 <div id="center">
-                    <a class="btn btn-info" href="javascript:;" data-toggle="modal" data-target="#composeModal"
+                    <a class="btn btn-info " href="javascript:;" data-toggle="modal" data-target="#composeModal"
                         style="border-radius:0px !important;color: white !important;">
                         Compose
                     </a>
@@ -166,28 +166,27 @@
                         </li>
                         <li class="nav-item">
                             <a href="{{ url('home/logout')}}" class=" nav-link" ">
-                                                    
-                                                    Logout
-                                                </a>
-                    
+                            Logout
+                            </a>
                         </li>
-                    
-                    
                     </ul>
+                    
                 </nav>
                 <!-- /.sidebar-menu -->
             </div>
             <!-- /.sidebar -->
         </aside>
+        
             
             @yield('content')
-            <!-- /.content-wrapper -->
-            <footer class=" main-footer">
+            
+                                    <!-- /.content-wrapper -->
+                                <footer class=" main-footer">
 
                                 </footer>
-
                                 <!-- Control Sidebar -->
                                 <aside class="control-sidebar control-sidebar-dark">
+
                                     <!-- Control sidebar content goes here -->
                                 </aside>
                                 <!-- /.control-sidebar -->

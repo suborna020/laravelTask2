@@ -16,7 +16,7 @@
             </div>
         </li>
         <li class="nav-item">
-            <img src="/user.jpg" alt="Avatar" id="profile_img" style="width:40px" class="float-right" />
+            <img src="../img/Group 99.svg" alt="Avatar" id="profile_img" style="width:40px" class="float-right" />
         </li>
     </ul>
 </nav>

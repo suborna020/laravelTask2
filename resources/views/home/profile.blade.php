@@ -16,7 +16,7 @@
             </div>
         </li>
         <li class="nav-item">
-            <img src="/user.jpg" alt="Avatar" id="profile_img" style="width:40px" class="float-right" />
+            <img src="../img/Group 99.svg" alt="Avatar" id="profile_img" style="width:40px" class="float-right" />
         </li>
     </ul>
 </nav>
@@ -35,7 +35,8 @@
                         <form action=".#" method="post">
                             <div class="input-group mb-2">
                                 <p class="" id="center">
-                                    <img src="/user.jpg" alt="Avatar" style="width:80px;border-radius: 20%;" />
+                                    <img src="../img/Group 99.svg" alt="Avatar"
+                                        style="width:80px;border-radius: 20%;" />
                                 </p>
 
 
