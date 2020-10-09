@@ -21,16 +21,25 @@ topbar =>  left: #213F7E  right: #4195D1
     margin-left: 188px !important;
   
 }
+/* {
+    
+} */
 .navbar {
     border-radius: 0px;
     min-height: 80px;
+    background-color: #213F7E;
+    background-image: linear-gradient(to right, #213F7E, #4195D1);
+}
+aside{
+    background-color: #213F7E;
+    background-image: linear-gradient(#213F7E, #4195D1);
 }
 .input-group-sm>.custom-select, .input-group-sm>.form-control:not(textarea) {
     height: calc(0.5em + 2.5rem + 6px);
     border-radius: 1.1rem !important;
 }
 
-/* ////////////////////////////For normal style/////////// */
+/* ----------------------For normal style------------------------------------------------------------ */
 * {
             margin: 0 !important;
         }
@@ -58,8 +67,8 @@ body{
         padding-left: 0;
     text-align: left;
 }
-/* //////////////////////////// */
-
+/*------------------------------------------------------------------ */
+/*---------------------inbox design------------------------------------------------------- */
 div.msg_card_header {
     background-color: white !important;
     border-style:none !important;
@@ -69,8 +78,6 @@ div.msg_card_header {
 div.card {
     border-style:none !important;
     border: none !important;
-}
-div.inbox{
 }
 div.msg_box {
     padding: 9px;
@@ -88,4 +95,107 @@ hr {
     border-top: 2px solid #a9bebe;
     
       margin-top: 15px !important;
+}
+/*----------------------page pagination---------------------------------------------------- */
+.pagination {
+  display: inline-block;
+}
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 0px solid #ddd;
+}
+.pagination a.active {
+  background-color: #f0f0f5;
+  color: black;
+}
+.pagination a:hover:not(.active) {background-color: #ddd;}
+/* -------------------------------------- */
+/* ----------------------------------------Compose buttom modal-------------------------------------------------- */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgb(255, 255, 255); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+}
+
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  bottom: 0;
+  right:0;
+  background-color: #213F7E;
+  width: 50%;
+  height:70%;
+  color:white;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+  
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin:auto !important;
+}
+.close:hover,
+.close:focus {
+  color: rgba(17, 16, 16, 0.52);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+    display: initial;
+  padding: 2px 16px;
+  background-color: #33334d;
+  color: white;
+  height: 10%;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {bottom: -300px; opacity: 0} 
+  to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
 }

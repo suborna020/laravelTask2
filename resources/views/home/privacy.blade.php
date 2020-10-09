@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title','Mail System')
-<nav class="main-header navbar navbar-expand navbar-white navbar-light" style="background-color: #213F7E;">
+<nav class="main-header navbar navbar-expand navbar-white navbar-light">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
     </ul>

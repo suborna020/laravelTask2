@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('title','Mail System')
 {{-- @include('home.navbar') --}}
-<nav class="main-header navbar navbar-expand navbar-white navbar-light" style="background-color: #213F7E;">
+<nav class="main-header navbar navbar-expand navbar-white navbar-light">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
 
@@ -27,7 +27,7 @@
     </ul>
 </nav>
 @section('content')
-<div class="content-wrapper" style="background-color:white;">
+<div class="content-wrapper" id="content style=" background-color:white;">
     <!-- Content Header (Page header) -->
     {{-- <div class="content-header">
         <div class="container-fluid">
@@ -54,12 +54,16 @@
                             <span class="refresh">↻</span>
                         </div>
                         <div class="card-tools" style="float: right;">
-                            <ul class="pagination pagination-sm">
-                                <li class="page-item"><a href="#" class="page-link">&laquo;</a></li>
-                                <li class="page-item"><a href="#" class="page-link">1</a></li>
-                                <li class="page-item"><a href="#" class="page-link">2</a></li>
-                                <li class="page-item"><a href="#" class="page-link">&raquo;</a></li>
-                            </ul>
+                            <div class="pagination">
+                                <a href="#" class="active">1</a>
+                                <a href="#">of</a>
+                                <a href="#">3</a>
+                            </div>
+
+                            <div class="pagination">
+                                <a href="#">❮</a>
+                                <a href="#">❯</a>
+                            </div>
                         </div>
                     </div>
                     <!-- /.card-body -->
@@ -126,6 +130,8 @@
 
     </section>
     
-    <!-- /.content -->
+
+        <!-- /.content -->
 </div>
-@endsection
+
+        @endsection

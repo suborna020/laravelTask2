@@ -46,11 +46,12 @@
     <style>
         .row {}
     </style>
+
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
 
-    <div class="wrapper">
+    <div class=" wrapper">
 
 
 
@@ -90,7 +91,7 @@
         <!-- /.navbar -->
 
         <!-- Main Sidebar Container -->
-        <aside class="main-sidebar sidebar-dark-primary elevation-4" style="width: 190px;background-color: #213F7E;">
+        <aside class="main-sidebar sidebar-dark-primary elevation-4" style="width:190px;">
 
 
             <!-- Sidebar -->
@@ -103,14 +104,14 @@
                     </div>
                 </div>
                 <div id="center">
-                    <a class="btn btn-info " href="javascript:;" data-toggle="modal" data-target="#composeModal"
+                    <a class="btn btn-info" id="myBtn" href="javascript:;"
                         style="border-radius:0px !important;color: white !important;">
                         Compose
                     </a>
                 </div>
 
                 <!-- Sidebar Menu -->
-                <nav class="mt-2">
+                <nav class="mt-2" id="nav">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                         data-accordion="false">
 
@@ -123,6 +124,7 @@
                         </li>
 
                         <li class="nav-item">
+
                             <a href="{{ url('home/outbox')}}" class="nav-link">
                                 <p>
                                     Outbox
@@ -148,10 +150,10 @@
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
                                     <a href="{{ url('home/profile')}}" class="nav-link" ">
-                                        &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<p>Profile</p>
-                                    </a>
-                                </li>
-                                <li class=" nav-item">
+                                                &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<p>Profile</p>
+                                            </a>
+                                        </li>
+                                        <li class=" nav-item">
                                         <a href="{{ url('home/privacy')}}" class="nav-link">
                                             &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<p>Privacy</p>
                                         </a>
@@ -166,9 +168,9 @@
                         </li>
                         <li class="nav-item">
                             <a href="{{ url('home/logout')}}" class=" nav-link" ">
-                            Logout
-                            </a>
-                        </li>
+                                    Logout
+                                    </a>
+                            </li>
                     </ul>
                     
                 </nav>
@@ -176,73 +178,90 @@
             </div>
             <!-- /.sidebar -->
         </aside>
-        
-            
+                
             @yield('content')
-            
-                                    <!-- /.content-wrapper -->
-                                <footer class=" main-footer">
+           <div id=" myModal" class="modal">
 
-                                </footer>
-                                <!-- Control Sidebar -->
-                                <aside class="control-sidebar control-sidebar-dark">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <div class="modal-header">
 
-                                    <!-- Control sidebar content goes here -->
-                                </aside>
-                                <!-- /.control-sidebar -->
+                                        <p>New Message</p>
+                                        <span class="close">&times;</span>
+                                    </div>
+
+                                    <div class="modal-body">
+
+                                    </div>
+                                </div>
+
             </div>
-            <!-- ./wrapper -->
 
-            <!-- jQuery -->
-            <script src="../plugins/jquery/jquery.min.js"></script>
-            <!-- jQuery UI 1.11.4 -->
-            <script src="../plugins/jquery-ui/jquery-ui.min.js"></script>
-            <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-            <script>
-                $.widget.bridge('uibutton', $.ui.button)
-            </script>
-            <!-- Bootstrap 4 -->
-            <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-            <!-- ChartJS -->
-            <script src="../plugins/chart.js/Chart.min.js"></script>
-            <!-- Sparkline -->
-            <script src="../plugins/sparklines/sparkline.js"></script>
-            <!-- JQVMap -->
-            <script src="../plugins/jqvmap/jquery.vmap.min.js"></script>
-            <script src="../plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
-            <!-- jQuery Knob Chart -->
-            <script src="../plugins/jquery-knob/jquery.knob.min.js"></script>
-            <!-- daterangepicker -->
-            <script src="../plugins/moment/moment.min.js"></script>
-            <script src="../plugins/daterangepicker/daterangepicker.js"></script>
-            <!-- Tempusdominus Bootstrap 4 -->
-            <script src="../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-            <!-- Summernote -->
-            <script ssrc="../plugins/summernote/summernote-bs4.min.js"></script>
-            <!-- overlayScrollbars -->
-            <script src="../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-            <!-- AdminLTE App -->
-            <script src="../dist/js/adminlte.js"></script>
-            <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-            <script src="../dist/js/pages/dashboard.js"></script>
-            <!-- AdminLTE for demo purposes -->
-            <script src="../dist/js/demo.js"></script>
 
-            <!-- my js file link -->
-            <script src="{{url('assets/js/custom.js')}}"></script>
-            <script src="/js/myjs.js"></script>
-            {{-- table design link --}}
-            <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js">
-            </script>
-            <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
-            <script type="text/javascript">
+            <!-- /.content-wrapper -->
+            <footer class=" main-footer">
+
+            </footer>
+            <!-- Control Sidebar -->
+            <aside class="control-sidebar control-sidebar-dark">
+
+                <!-- Control sidebar content goes here -->
+            </aside>
+            <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- jQuery -->
+    <script src="../plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="../plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+        $.widget.bridge('uibutton', $.ui.button)
+    </script>
+    <!-- Bootstrap 4 -->
+    <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ChartJS -->
+    <script src="../plugins/chart.js/Chart.min.js"></script>
+    <!-- Sparkline -->
+    <script src="../plugins/sparklines/sparkline.js"></script>
+    <!-- JQVMap -->
+    <script src="../plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="../plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="../plugins/jquery-knob/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="../plugins/moment/moment.min.js"></script>
+    <script src="../plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script ssrc="../plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../dist/js/adminlte.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="../dist/js/pages/dashboard.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="../dist/js/demo.js"></script>
+
+    <!-- my js file link -->
+    <script src="{{url('assets/js/custom.js')}}"></script>
+    <script src="/js/myjs.js"></script>
+    {{-- table design link --}}
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js">
+    </script>
+    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+    {{-- table design end --}}
+    {{-- <script type="text/javascript">
                 $(document).ready(function(){
             $('.datatable').dataTable();
           });
-            </script>
-            {{-- table design end --}}
-            {{-- /////////////js backup if downloaded plugin dont work//////// --}}
-            {{-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            </script> --}}
+
+    {{-- /////////////js backup if downloaded plugin dont work//////// --}}
+    {{-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
         </script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
@@ -251,7 +270,35 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
          </script> --}}
-            {{-- ///////////// end /////////--}}
+    {{-- ///////////// end /////////--}}
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        
+        // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+        
+            // When the user clicks the button, open the modal
+            btn.onclick = function() {
+            // modal.style.display = "block";
+            $(".modal").css("display","block");
+            }
+        
+            // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
+                modal.style.display = "none";
+                }
+        
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                if (event.target == modal) {
+                modal.style.display = "none";
+                }
+                }
+    </script>
 </body>
 
 </html>
