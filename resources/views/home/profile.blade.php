@@ -27,8 +27,7 @@
         <div class="row">
             <div class="col-md-12" style="margin: auto !important ;">
 
-                <div class="card" style="padding: 246px;padding-top: 30px;
-">
+                <div class="card" style="padding: 246px;padding-top: 30px;">
                     <div class="card-body ">
 
 

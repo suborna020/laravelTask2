@@ -2,90 +2,163 @@
 gradient color use krechi.. sidebar =>   top: #213F7E   bottom: #4195D1
 topbar =>  left: #213F7E  right: #4195D1
 */
-#profile_img{
-     border-radius: 50%;
+#profile_img {
+    border-radius: 50%;
 }
-.form-inline .custom-select, .form-inline .input-group {
+
+
+.form-inline .custom-select,
+.form-inline .input-group {
     width: 900px;
 }
+
 .content-wrapper>.content {
-            padding: 0 !important;
-            margin: 0px !important;
-        }
-.content-wrapper, body:not(.sidebar-mini-md) .main-footer, body:not(.sidebar-mini-md) .main-header {
-    transition: margin-left .3s ease-in-out;
+    padding: 0 !important;
+    margin: 0px !important;
+}
+
+.content-wrapper,
+body:not(.sidebar-mini-md) .main-footer,
+body:not(.sidebar-mini-md) .main-header {
+    transition: margin-left 0.3s ease-in-out;
     margin-left: 190px;
 }
-.content-wrapper, body:not(.sidebar-mini-md) .main-footer, body:not(.sidebar-mini-md) .main-header {
-    transition: margin-left .3s ease-in-out;
+
+.content-wrapper,
+body:not(.sidebar-mini-md) .main-footer,
+body:not(.sidebar-mini-md) .main-header {
+    transition: margin-left 0.3s ease-in-out;
     margin-left: 188px !important;
-  
 }
+
 /* {
     
 } */
 .navbar {
     border-radius: 0px;
     min-height: 80px;
-    background-color: #213F7E;
-    background-image: linear-gradient(to right, #213F7E, #4195D1);
+    background-color: #213f7e;
+    background-image: linear-gradient(to right, #213f7e, #4195d1);
 }
-aside{
-    background-color: #213F7E;
-    background-image: linear-gradient(#213F7E, #4195D1);
+
+aside {
+    background-color: #213f7e;
+    background-image: linear-gradient(#213f7e, #4195d1);
 }
-.input-group-sm>.custom-select, .input-group-sm>.form-control:not(textarea) {
+
+.input-group-sm>.custom-select,
+.input-group-sm>.form-control:not(textarea) {
     height: calc(0.5em + 2.5rem + 6px);
     border-radius: 1.1rem !important;
 }
 
 /* ----------------------For normal style------------------------------------------------------------ */
 * {
-            margin: 0 !important;
-        }
-body{
-            background-color: white;
-            font-family: 'Montserrat'!important;
-            font-size: 12px;
-            font-weight: 800;
-        }
-.text_white{
+    margin: 0 !important;
+}
+
+body {
+    background-color: white;
+    font-family: "Montserrat" !important;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.text_white {
     color: white;
 }
-#center{
+
+#center {
     margin: 0 auto !important;
-     text-align: center;
+    text-align: center;
 }
+
 .fa-edit {
     color: white;
     font-size: 12px;
-    background-color: #213F7E;
+    background-color: #213f7e;
     padding: 5px;
     border-radius: 20%;
 }
-.left_align{
-        padding-left: 0;
+
+.left_align {
     text-align: left;
+    float: left;
 }
+.right_align {
+    text-align: right;
+    float: right;
+}
+.inbox a{
+    color: black !important;
+    
+
+}
+.inbox a:-webkit-any-link {
+    text-decoration: none;
+    cursor: pointer;
+}
+/* ---------------msg details page------------------------------------------------- */
+.msg {
+    margin: 18px 0 !important;
+}
+.msg_content{
+    overflow-wrap: anywhere;
+    height: auto;
+}
+
+.msg_content .msg_status{
+    background-color: #a2a9ac;
+    max-width: 108px;
+    padding: 3px;
+    text-align: center;
+    border-radius: 16px;
+    color: white;
+}
+.msg_content .msg_body{
+ 
+padding: 20px 0px;
+}
+.msg_content .div_box{
+    position: inherit;
+    background-color: #a2a9ac;
+    width: 30%;
+    height: 42%;
+    margin: 9px 0 !important;
+}
+.msg_content .msg_button{
+    border-radius: 0px !important;
+    color: white !important;
+    background-color: #213f7e;
+    width: 178px;
+    
+}
+
+
 /*------------------------------------------------------------------ */
 /*---------------------inbox design------------------------------------------------------- */
 div.msg_card_header {
     background-color: white !important;
-    border-style:none !important;
+    border-style: none !important;
     border: none !important;
     padding: 20px;
 }
+
 div.card {
-    border-style:none !important;
+    border-style: none !important;
     border: none !important;
+    padding: 100%  0 ;
 }
+
 div.msg_box {
     padding: 9px;
-      margin-top: 20px !important;
+    margin-top: 20px !important;
 }
+
 div.unread_msg {
-background-color: #D7E9F5;
+    background-color: #d7e9f5;
 }
+
 hr {
     background-color: #31a4a4;
     width: 95%;
@@ -93,109 +166,153 @@ hr {
     margin: 0 auto !important;
     border-width: thick;
     border-top: 2px solid #a9bebe;
-    
-      margin-top: 15px !important;
+
+    margin-top: 15px !important;
 }
+
 /*----------------------page pagination---------------------------------------------------- */
 .pagination {
-  display: inline-block;
+    display: inline-block;
 }
+
 .pagination a {
-  color: black;
-  float: left;
-  padding: 8px 16px;
-  text-decoration: none;
-  transition: background-color .3s;
-  border: 0px solid #ddd;
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border: 0px solid #ddd;
 }
+
 .pagination a.active {
-  background-color: #f0f0f5;
-  color: black;
+    background-color: #f0f0f5;
+    color: black;
 }
-.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
 /* -------------------------------------- */
 /* ----------------------------------------Compose buttom modal-------------------------------------------------- */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */  
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0); /* Black w/ opacity */
-  -webkit-animation-name: fadeIn; /* Fade in the background */
-  -webkit-animation-duration: 0.4s;
-  animation-name: fadeIn;
-  animation-duration: 0.4s;
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0);
+    /* Black w/ opacity */
+    -webkit-animation-name: fadeIn;
+    /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+    overflow-wrap: anywhere;
 }
 
 /* Modal Content */
 .modal-content {
-  position: fixed;
-  bottom: 0;
-  right:0;
-  background-color: #213F7E;
-  width: 50%;
-  height:70%;
-  color:white;
-  -webkit-animation-name: slideIn;
-  -webkit-animation-duration: 0.4s;
-  animation-name: slideIn;
-  animation-duration: 0.4s;
-  
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #213f7e;
+    width: 50%;
+    height: 70%;
+    color: white;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+    overflow-wrap: anywhere;
 }
 
 /* The Close Button */
 .close {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  margin:auto !important;
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin: auto !important;
 }
+
 .close:hover,
 .close:focus {
-  color: rgba(17, 16, 16, 0.52);
-  text-decoration: none;
-  cursor: pointer;
+    color: rgba(17, 16, 16, 0.52);
+    text-decoration: none;
+    cursor: pointer;
 }
-
+/* /..------------------------...popup design------------------------------------------------------------- */
 .modal-header {
     display: initial;
-  padding: 2px 16px;
-  background-color: #33334d;
-  color: white;
-  height: 10%;
+    padding: 3px 7px;
+    background-color: #33334d;
+    color: white;
+    height: 10%;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-body {
+    padding: 24px 16px;
+}
 
 .modal-footer {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
 }
-
-/* Add Animation */
+/* Add Animation on popup */
 @-webkit-keyframes slideIn {
-  from {bottom: -300px; opacity: 0} 
-  to {bottom: 0; opacity: 1}
-}
+    from {
+        bottom: -300px;
+        opacity: 0;
+    }
 
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
 @keyframes slideIn {
-  from {bottom: -300px; opacity: 0}
-  to {bottom: 0; opacity: 1}
-}
+    from {
+        bottom: -300px;
+        opacity: 0;
+    }
 
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
 @-webkit-keyframes fadeIn {
-  from {opacity: 0} 
-  to {opacity: 1}
-}
+    from {
+        opacity: 0;
+    }
 
-@keyframes fadeIn {
-  from {opacity: 0} 
-  to {opacity: 1}
+    to {
+        opacity: 1;
+    }
 }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+#popup_form .form-group{
+    margin-bottom: 15px !important;
+}
+/* ------------------------------------------------- */

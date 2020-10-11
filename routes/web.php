@@ -29,4 +29,6 @@ Route::get('/home/settings', [HomeController::class, 'settings']);
 Route::get('home/profile', [HomeController::class, 'profile']);
 Route::get('home/privacy', [HomeController::class, 'privacy']);
 Route::get('home/upload', [HomeController::class, 'upload']);
+Route::get('/home/msg_box', [HomeController::class, 'msg_box']);
 Route::get('/home/logout', [HomeController::class, 'logout']);
+

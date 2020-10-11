@@ -68,6 +68,28 @@
                     </div>
                     <!-- /.card-body -->
                     <div class="cart-body inbox ">
+
+                        <a href="{{ url('home/msg_box')}}">
+                            <div class="row msg_box unread_msg">
+                                <div class=" col-sm-1" style="max-width: 5.333333% !important;">
+                                    <img src="img/Group 99.svg" alt="Avatar" style="width:40px;border-radius: 30%;" />
+                                </div>
+                                <div class="col-sm-10" style="">
+
+                                    <h3><b>Mr.robin</b></h3>
+                                </div>
+                                <div class="col-sm-1 msg_time" style="">
+                                    11:00
+                                </div>
+                                <div class="" style="padding-left: 65px;">
+                                    Hello. How are you today?Hello. How are you today?
+                                </div>
+
+
+                            </div>
+                        </a>
+                        <hr style=""">
+                      <a href=" {{ url('home/msg_box')}}">
                         <div class="row msg_box unread_msg">
                             <div class=" col-sm-1" style="max-width: 5.333333% !important;">
                                 <img src="img/Group 99.svg" alt="Avatar" style="width:40px;border-radius: 30%;" />
@@ -83,43 +105,31 @@
                                 Hello. How are you today?Hello. How are you today?
                             </div>
 
+
                         </div>
+                        </a>
                         <hr style=""">
-                       <div class=" row msg_box unread_msg">
-                        <div class=" col-sm-1" style="max-width: 5.333333% !important;"><img src="img/Group 99.svg"
-                                alt="Avatar" style="width:40px;border-radius: 30%;" />
-                        </div>
-                        <div class="col-sm-10" style="">
+                    <a href=" {{ url('home/msg_box')}}">
+                        <div class="row msg_box ">
+                            <div class=" col-sm-1" style="max-width: 5.333333% !important;">
+                                <img src="img/Group 99.svg" alt="Avatar" style="width:40px;border-radius: 30%;" />
+                            </div>
+                            <div class="col-sm-10" style="">
 
-                            <h3><b>Mr.robin</b></h3>
-                        </div>
-                        <div class="col-sm-1 msg_time" style="">
-                            11:00
-                        </div>
-                        <div class="" style="padding-left: 65px;">
-                            Hello. How are you today?Hello. How are you today?
-                        </div>
+                                <h3><b>Mr.robin</b></h3>
+                            </div>
+                            <div class="col-sm-1 msg_time" style="">
+                                11:00
+                            </div>
+                            <div class="" style="padding-left: 65px;">
+                                Hello. How are you today?Hello. How are you today?
+                            </div>
 
+
+                        </div>
+                        </a>
+                        <hr>
                     </div>
-                    <hr style=""">
-                    <div class=" row msg_box ">
-                    <div class=" col-sm-1" style="max-width: 5.333333% !important;"><img src="img/Group 99.svg"
-                        alt="Avatar" style="width:40px;border-radius: 30%;" />
-                </div>
-                <div class="col-sm-10" style="">
-
-                    <h3><b>Mr.robin</b></h3>
-                </div>
-                <div class="col-sm-1 msg_time" style="">
-                    11:00
-                </div>
-                <div class="" style="padding-left: 65px;">
-                    Hello. How are you today?Hello. How are you today?
-                </div>
-
-            </div>
-            <hr style=""">
-                </div>
 
                 </div>
             </div>
@@ -129,9 +139,9 @@
 
 
     </section>
-    
 
-        <!-- /.content -->
+
+    <!-- /.content -->
 </div>
 
-        @endsection
+@endsection

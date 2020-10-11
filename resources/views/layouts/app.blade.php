@@ -36,8 +36,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     {{-- Montserrat front adding --}}
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     {{-- table design link  --}}
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
@@ -45,6 +44,7 @@
     <link href="/css/mystyle.css" rel=" stylesheet">
     <style>
         .row {}
+
     </style>
 
 </head>
@@ -104,16 +104,14 @@
                     </div>
                 </div>
                 <div id="center">
-                    <a class="btn btn-info" id="myBtn" href="javascript:;"
-                        style="border-radius:0px !important;color: white !important;">
+                    <a class="btn btn-info" id="myBtn" href="javascript:;" style="border-radius:0px !important;color: white !important;">
                         Compose
                     </a>
                 </div>
 
                 <!-- Sidebar Menu -->
                 <nav class="mt-2" id="nav">
-                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
-                        data-accordion="false">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 
                         <li class="nav-item">
                             <a href="{{ url('home')}}" class="nav-link">
@@ -158,7 +156,7 @@
                                             &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<p>Privacy</p>
                                         </a>
                                 </li>
-                                <li class=" nav-item">
+                                <li class="nav-item">
                                     <a href="{{ url('home/upload')}}" class="nav-link">
                                         &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<p>Upload</p>
                                     </a>
@@ -180,17 +178,39 @@
         </aside>
                 
             @yield('content')
-           <div id=" myModal" class="modal">
+                                 <div  class   = " modal" id="myModal">
 
                                 <!-- Modal content -->
                                 <div class="modal-content">
                                     <div class="modal-header">
 
-                                        <p>New Message</p>
-                                        <span class="close">&times;</span>
+                                        <div class="left_content">
+                                            <p>New Message</p>
+                                        </div>
+                                        <div class="right_content">
+                                            <span class="close">&times;</span>
+                                        </div>
+
                                     </div>
 
-                                    <div class="modal-body">
+                                    <div class="modal-body" style="width: 100%">
+                                        <div style="width: 100%">
+                                            <form action="#" id="popup_form">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="from" placeholder="From" name="from">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="to" placeholder="To " name="to">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="subject" placeholder=" Subject " name="subject">
+                                                </div>
+                                                    <textarea class="form-control form-group" rows="7" id="comment"  placeholder=" Comment.... " ></textarea>
+                                                </div>
+                                                
+                                                <button type="submit" class="btn btn-default form-group right_align">Submit</button>
+                                            </form>
+                                        </div>
 
                                     </div>
                                 </div>
@@ -218,6 +238,7 @@
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
     <script>
         $.widget.bridge('uibutton', $.ui.button)
+
     </script>
     <!-- Bootstrap 4 -->
     <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -274,30 +295,31 @@
     <script>
         // Get the modal
         var modal = document.getElementById("myModal");
-        
+
         // Get the button that opens the modal
         var btn = document.getElementById("myBtn");
-        
+
         // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-        
-            // When the user clicks the button, open the modal
-            btn.onclick = function() {
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function() {
             // modal.style.display = "block";
-            $(".modal").css("display","block");
+            $(".modal").css("display", "block");
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
             }
-        
-            // When the user clicks on <span> (x), close the modal
-                span.onclick = function() {
-                modal.style.display = "none";
-                }
-        
-                // When the user clicks anywhere outside of the modal, close it
-                window.onclick = function(event) {
-                if (event.target == modal) {
-                modal.style.display = "none";
-                }
-                }
+        }
+
     </script>
 </body>
 

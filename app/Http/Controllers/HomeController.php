@@ -40,4 +40,8 @@ class HomeController extends Controller
     {
         return view('home.upload');
     }
+    public function msg_box()
+    {
+        return view('home.msg_box');
+    }
 }
