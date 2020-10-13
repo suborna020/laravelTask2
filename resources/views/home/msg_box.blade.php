@@ -26,7 +26,7 @@
     <section class="content">
         <div class="row">
             <div class="col-md-12" style="margin: auto !important ;">
-                <div class="card " style="width: 100%;padding: 100% 0; padding-top: 0;">
+                <div class="card " style="width: 100%;    padding: 100% 37px; padding-top: 0;">
                     <div class="msg_card_header">
 
                         <div class="card-tools" style="float: right;">

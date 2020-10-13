@@ -284,7 +284,6 @@
                 , height: 100
             });
         });
-        //$('#exampleModal').css("margin-left", $(window).width() - $('.modal-content').width());
 
     </script>
 
