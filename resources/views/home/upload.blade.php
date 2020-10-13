@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title','Mail System')
+@section('title','Clients Customer Web App')
 <nav class="main-header navbar navbar-expand navbar-white navbar-light">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
@@ -27,13 +27,11 @@
         <div class="row">
             <div class="col-md-12" style="margin: auto !important ;">
 
-                <div class="card" style="padding: 246px;padding-top: 30px;">
+                <div class="card"  style="padding: 246px;padding-top: 30px;">
                     <div class="card-body ">
 
-
-
-
-
+                     
+                     
 
 
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -40,13 +40,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     {{-- table design link  --}}
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
+    <!------------------ include summernote css/js--------------------------------------------------->
+
     {{-- my own sheet --}}
     <link href="/css/mystyle.css" rel=" stylesheet">
     <style>
-        .row {}
 
     </style>
-
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -104,9 +104,10 @@
                     </div>
                 </div>
                 <div id="center">
-                    <a class="btn btn-info" id="myBtn" href="javascript:;" style="border-radius:0px !important;color: white !important;">
+                    <a class="btn btn-info" id="mypopupBtn" data-toggle="modal" data-target="#compose_popup_content" href="javascript:;" style="border-radius:0px !important;color: white !important;background-color: #4195D1;">
                         Compose
                     </a>
+
                 </div>
 
                 <!-- Sidebar Menu -->
@@ -178,44 +179,40 @@
         </aside>
                 
             @yield('content')
-                                 <div  class   = " modal" id="myModal">
+<!-------------------------- Modal content ------------------------------------------------->
+<div  class   = " " id=" compose_popup">
+                                <div class="modal fade" id="compose_popup_content" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" role="dialog">
+                                    <div class="modal-dialog modal-lg right-zero" role="document" style="    width: 52%;">
+                                        <div class="modal-content">
+                                            <div class="modal_header">
+                                                <div class="modal_header_left">
+                                                    <h5>New message</h5>
+                                                </div>
+                                                <div class="modal_header_right" style="">
+                                                <i class="far fa-times-circle fa-lg"  data-dismiss="modal" aria-label="Close"></i>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="text" class="form-control" id="from" placeholder="From">
 
-                                <!-- Modal content -->
-                                <div class="modal-content">
-                                    <div class="modal-header">
+                                                <input type="text" class="form-control" id="to" placeholder="To">
 
-                                        <div class="left_content">
-                                            <p>New Message</p>
+                                                <input type="text" class="form-control" id="subject" placeholder="Subject">
+
+                                                <textarea class="popup_summernote" id="summernote" name="editordata" style="width:20%;" placeholder="Details"></textarea>
+                                                <button type="button" class=" form-control btn btn-primary"style="background-color: #4195D1;width: 20%;color: white;float: right;">Save </button>
+                                            </div>
                                         </div>
-                                        <div class="right_content">
-                                            <span class="close">&times;</span>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="modal-body" style="width: 100%">
-                                        <div style="width: 100%">
-                                            <form action="#" id="popup_form">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" id="from" placeholder="From" name="from">
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" id="to" placeholder="To " name="to">
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" id="subject" placeholder=" Subject " name="subject">
-                                                </div>
-                                                    <textarea class="form-control form-group" rows="7" id="comment"  placeholder=" Comment.... " ></textarea>
-                                                </div>
-                                                
-                                                <button type="submit" class="btn btn-default form-group right_align">Submit</button>
-                                            </form>
-                                        </div>
-
                                     </div>
                                 </div>
 
             </div>
+
+
+
+
+
 
 
             <!-- /.content-wrapper -->
@@ -266,61 +263,31 @@
     <script src="../dist/js/pages/dashboard.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="../dist/js/demo.js"></script>
-
-    <!-- my js file link -->
+    <!------------------------------------ my js file link ----------------------------------------->
     <script src="{{url('assets/js/custom.js')}}"></script>
     <script src="/js/myjs.js"></script>
-    {{-- table design link --}}
+    {{------------------------------------------ table design link ----------------------------------}}
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js">
     </script>
     <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
-    {{-- table design end --}}
-    {{-- <script type="text/javascript">
-                $(document).ready(function(){
-            $('.datatable').dataTable();
-          });
-            </script> --}}
-
-    {{-- /////////////js backup if downloaded plugin dont work//////// --}}
-    {{-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-         </script> --}}
-    {{-- ///////////// end /////////--}}
+    <!------------------ include summernote css/js--------------------------------------------------->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- include summernote css/js -->
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
     <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
-
-        // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks the button, open the modal
-        btn.onclick = function() {
-            // modal.style.display = "block";
-            $(".modal").css("display", "block");
-        }
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
+        $(window).on('load', function() {
+            $('.popup_summernote').summernote({
+                dialogsInBody: true
+                , height: 100
+            });
+        });
+        //$('#exampleModal').css("margin-left", $(window).width() - $('.modal-content').width());
 
     </script>
+
 </body>
 
 </html>

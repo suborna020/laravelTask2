@@ -122,9 +122,9 @@ padding: 20px 0px;
 .msg_content .div_box{
     position: inherit;
     background-color: #a2a9ac;
-    width: 30%;
-    height: 42%;
-    margin: 9px 0 !important;
+    width: 40%;
+    height: 26%;
+    margin: 8px 0 !important;
 }
 .msg_content .msg_button{
     border-radius: 0px !important;
@@ -141,7 +141,7 @@ div.msg_card_header {
     background-color: white !important;
     border-style: none !important;
     border: none !important;
-    padding: 20px;
+    padding: 8px 0px;
 }
 
 div.card {
@@ -151,7 +151,7 @@ div.card {
 }
 
 div.msg_box {
-    padding: 9px;
+    padding: 0 120px;
     margin-top: 20px !important;
 }
 
@@ -193,126 +193,33 @@ hr {
     background-color: #ddd;
 }
 
-/* -------------------------------------- */
-/* ----------------------------------------Compose buttom modal-------------------------------------------------- */
-.modal {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%;
-    /* Full width */
-    height: 100%;
-    /* Full height */
-    overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0);
-    /* Black w/ opacity */
-    -webkit-animation-name: fadeIn;
-    /* Fade in the background */
-    -webkit-animation-duration: 0.4s;
-    animation-name: fadeIn;
-    animation-duration: 0.4s;
-    overflow-wrap: anywhere;
-}
-
-/* Modal Content */
-.modal-content {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    background-color: #213f7e;
-    width: 50%;
-    height: 70%;
+/*-----------------------------compose popup-------------------- ---------------------*/
+#compose_popup_content .modal-dialog{
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-0%, -0%) !important;
+    position: sticky !important;
+  }
+  #compose_popup_content .modal_header {
+    background-color: #3B3B53;
     color: white;
-    -webkit-animation-name: slideIn;
-    -webkit-animation-duration: 0.4s;
-    animation-name: slideIn;
-    animation-duration: 0.4s;
-    overflow-wrap: anywhere;
+    padding: 15px;
 }
-
-/* The Close Button */
-.close {
-    color: white;
+#compose_popup_content .modal_header_left {
+   float: left;
+}
+#compose_popup_content .modal_header_right {
     float: right;
-    font-size: 28px;
-    font-weight: bold;
-    margin: auto !important;
+ }
+ #compose_popup_content .form-control{
+    margin: 12px 0 !important;
+ }
+ #compose_popup_content .modal-body {
+    background-color: #213F7E;
 }
 
-.close:hover,
-.close:focus {
-    color: rgba(17, 16, 16, 0.52);
-    text-decoration: none;
-    cursor: pointer;
-}
-/* /..------------------------...popup design------------------------------------------------------------- */
-.modal-header {
-    display: initial;
-    padding: 3px 7px;
-    background-color: #33334d;
-    color: white;
-    height: 10%;
-}
-
-.modal-body {
-    padding: 24px 16px;
-}
-
-.modal-footer {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-}
-/* Add Animation on popup */
-@-webkit-keyframes slideIn {
-    from {
-        bottom: -300px;
-        opacity: 0;
-    }
-
-    to {
-        bottom: 0;
-        opacity: 1;
-    }
-}
-@keyframes slideIn {
-    from {
-        bottom: -300px;
-        opacity: 0;
-    }
-
-    to {
-        bottom: 0;
-        opacity: 1;
-    }
-}
-@-webkit-keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-#popup_form .form-group{
-    margin-bottom: 15px !important;
-}
+  #compose_popup_content  .right-zero{
+    margin-right: 0 !important;
+ }
 /* ------------------------------------------------- */
+

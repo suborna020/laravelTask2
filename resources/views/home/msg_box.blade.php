@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title','Mail System')
+@section('title','Clients Customer Web App')
 <nav class="main-header navbar navbar-expand navbar-white navbar-light">
     <!-- Left navbar links -->
     <ul class="navbar-nav">

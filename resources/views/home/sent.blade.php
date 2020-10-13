@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title','Mail System')
+@section('title','Clients Customer Web App')
 {{-- @include('home.navbar') --}}
 <nav class="main-header navbar navbar-expand navbar-white navbar-light" ">
     <!-- Left navbar links -->
