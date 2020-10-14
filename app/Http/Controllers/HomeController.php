@@ -5,13 +5,24 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
-{
+{   
+    //////////////////////welcome page //////////////////////
+    public function welcome()
+    {
+        return view('welcome');
+    }
+    public function sign_up()
+    {
+        return view('sign_up');
+    }
+    ////////////////////
     public function home()
     {
         // echo url('');
         // die();
         return view('home.dashboard');
     }
+    
     public function outbox()
     {
         return view('home.outbox');

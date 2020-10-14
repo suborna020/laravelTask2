@@ -14,13 +14,15 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/welcome', function () {
-    return view('welcome');
-});
 Route::get('/', function () {
     return view('welcome');
     //return redirect("home");
 });
+
+// welcome page
+Route::get('/welcome', [HomeController::class, 'welcome']);
+Route::get('/sign_up', [HomeController::class, 'sign_up']);
+
 
 Route::get('/home', [HomeController::class, 'home']);
 Route::get('/home/outbox', [HomeController::class, 'outbox']);

@@ -1,31 +1,7 @@
 @extends('layouts.app')
 @section('title','Clients Customer Web App')
 {{-- @include('home.navbar') --}}
-<nav class="main-header navbar navbar-expand navbar-white navbar-light">
-    <!-- Left navbar links -->
-    <ul class="navbar-nav">
 
-
-    </ul>
-    <!-- SEARCH FORM -->
-    @include('home.navbar')
-
-    <!-- Right navbar links -->
-    <ul class="navbar-nav ml-auto">
-        <!-- Messages Dropdown Menu -->
-
-        <!-- Notifications Dropdown Menu -->
-        <li class="nav-item">
-
-            <div class="text_white" style="font-size: 20px;">
-                &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-            </div>
-        </li>
-        <li class="nav-item">
-            <img src="img/Group 99.svg" alt="Avatar" id="profile_img" style="width:40px" class="float-right" />
-        </li>
-    </ul>
-</nav>
 @section('content')
 <div class="content-wrapper" id="content style=" background-color:white;">
     <!-- Content Header (Page header) -->

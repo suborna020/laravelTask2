@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <!-- Tempusdominus Bbootstrap 4 -->
-    <link rel="stylesheet" href="../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
     <!-- iCheck -->
     <link rel="stylesheet" href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
     <!-- JQVMap -->
@@ -23,12 +21,9 @@
     <link rel="stylesheet" href="../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
     <!-- Daterange picker -->
     <link rel="stylesheet" href="../plugins/daterangepicker/daterangepicker.css">
-    <!-- summernote -->
-    <link rel="stylesheet" href="../plugins/summernote/summernote-bs4.css">
-    <!-- Google Font: Source Sans Pro -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    
 
-    {{-- myStyle sheet  --}}
+    {{-- my included Style sheet  --}}
 
     {{-- for check box icon --}}
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
@@ -36,58 +31,49 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     {{-- Montserrat front adding --}}
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    {{-- table design link  --}}
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
-    <!------------------ include summernote css/js--------------------------------------------------->
+
+    
+    
+    <!------------------ include summernote css/js-------------------------------->
 
     {{-- my own sheet --}}
     <link href="/css/mystyle.css" rel=" stylesheet">
     <style>
 
     </style>
+    
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
 
     <div class=" wrapper">
 
-
-
-        <!-- Navbar -->{{-- @include('home.navbar') --}}
-        {{-- <nav class="main-header navbar navbar-expand navbar-white navbar-light" style="background-color: #213F7E;">
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
             <!-- Left navbar links -->
             <ul class="navbar-nav">
 
 
             </ul>
             <!-- SEARCH FORM -->
+            {{-- @include('home.navbar')  --}}
             <form class="form-inline ml-0 navform " style="margin-left: 18px!important;">
                 <div class="input-group input-group-sm">
 
-                    <input class="form-control form-control-navbar" type="search" placeholder="Search Emails"
-                        aria-label="Search" style="width: 107%;">
-
+                    <input class="form-control form-control-navbar" type="search" placeholder="Search Emails" aria-label="Search" style="width: 107%;">
                 </div>
             </form>
-
             <!-- Right navbar links -->
             <ul class="navbar-nav ml-auto">
-                <!-- Messages Dropdown Menu -->
-
-                <!-- Notifications Dropdown Menu -->
                 <li class="nav-item">
-
                     <div class="text_white" style="font-size: 20px;">
                         &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
                     </div>
                 </li>
                 <li class="nav-item">
-                    <img src="/user.jpg" alt="Avatar" id="profile_img" style="width:40px" class="float-right" />
+                    <img src="../img/Group 99.svg" alt="Avatar" id="profile_img" style="width:40px" class="float-right" />
                 </li>
             </ul>
-        </nav> --}}
+        </nav>
         <!-- /.navbar -->
 
         <!-- Main Sidebar Container -->
@@ -189,8 +175,8 @@
                                                     <h5>New message</h5>
                                                 </div>
                                                 <div class="modal_header_right" style="">
-                                                <i class="far fa-times-circle fa-lg"  data-dismiss="modal" aria-label="Close"></i>
-                                                    
+                                                    <i class="far fa-times-circle fa-lg" data-dismiss="modal" aria-label="Close"></i>
+
                                                 </div>
                                             </div>
                                             <div class="modal-body">
@@ -201,7 +187,7 @@
                                                 <input type="text" class="form-control" id="subject" placeholder="Subject">
 
                                                 <textarea class="popup_summernote" id="summernote" name="editordata" style="width:20%;" placeholder="Details"></textarea>
-                                                <button type="button" class=" form-control btn btn-primary"style="background-color: #4195D1;width: 20%;color: white;float: right;">Save </button>
+                                                <button type="button" class=" form-control btn btn-primary" style="background-color: #4195D1;width: 20%;color: white;float: right;">Send </button>
                                             </div>
                                         </div>
                                     </div>
@@ -251,8 +237,7 @@
     <!-- daterangepicker -->
     <script src="../plugins/moment/moment.min.js"></script>
     <script src="../plugins/daterangepicker/daterangepicker.js"></script>
-    <!-- Tempusdominus Bootstrap 4 -->
-    <script src="../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    
     <!-- Summernote -->
     <script ssrc="../plugins/summernote/summernote-bs4.min.js"></script>
     <!-- overlayScrollbars -->
@@ -263,18 +248,15 @@
     <script src="../dist/js/pages/dashboard.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="../dist/js/demo.js"></script>
-    <!------------------------------------ my js file link ----------------------------------------->
+    <!------------------ my js file link ----------------------------------------->
     <script src="{{url('assets/js/custom.js')}}"></script>
     <script src="/js/myjs.js"></script>
-    {{------------------------------------------ table design link ----------------------------------}}
-    <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js">
-    </script>
-    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
-    <!------------------ include summernote css/js--------------------------------------------------->
+    
+    <!------------ include summernote bootstrap3/js------------------------------------->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <!-- include summernote css/js -->
+    <!-------------- include summernote css/js ------------>
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
     <script>

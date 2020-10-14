@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-size: 14px;
+}
+
+#parent_div {
+    height: 100%;
+    width: 100%;
+    overflow-wrap: anywhere;
+
+
+}
+
+.clo_1 {
+    float: left;
+    width: 60%;
+    height: 100%;
+    color: white;
+    position: absolute;
+}
+.clo_1_sub {
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    text-align: center;
+    margin: auto;
+    margin-top: 70px;
+    padding: 10px;
+}
+.clo_2 {
+    float: right;
+    width: 40%;
+    height: 100%;
+    color: black;
+    height: 100%;
+    overflow-wrap: anywhere;
+}
+
+.clo_2_sub {
+    width: 75%;
+    margin: auto;
+}
+
+.clo_2_sub .btn-block {
+    background-color: #213F7E;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.clo_2_sub .btn-block:hover {
+    background-color: #213F7E;
+}
+
+.clo_2_sub label {
+    font-weight: 1;
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+}

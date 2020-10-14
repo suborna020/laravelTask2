@@ -52,7 +52,7 @@ aside {
     border-radius: 1.1rem !important;
 }
 
-/* ----------------------For normal style------------------------------------------------------------ */
+/* ----------------------For normal style------------------------------------ */
 * {
     margin: 0 !important;
 }
@@ -70,6 +70,10 @@ body {
 
 #center {
     margin: 0 auto !important;
+    text-align: center;
+}
+.center {
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -97,6 +101,11 @@ body {
 .inbox a:-webkit-any-link {
     text-decoration: none;
     cursor: pointer;
+}
+/*-------- profile.php page-------- */
+
+#marginbottom{
+    margin-bottom: 15px !important;
 }
 /* ---------------msg details page------------------------------------------------- */
 .msg {
