@@ -8,33 +8,33 @@
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
-      <!-- Font Awesome -->
-  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  <!-- Tempusdominus Bbootstrap 4 -->
-  <link rel="stylesheet" href="../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
-  <!-- iCheck -->
-  <link rel="stylesheet" href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-  <!-- JQVMap -->
-  <link rel="stylesheet" href="../plugins/jqvmap/jqvmap.min.css">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
-  <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
-  <!-- Daterange picker -->
-  <link rel="stylesheet" href="../plugins/daterangepicker/daterangepicker.css">
-  <!-- summernote -->
-  <link rel="stylesheet" href="../plugins/summernote/summernote-bs4.css">
-  <!-- Google Font: Source Sans Pro -->
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Tempusdominus Bbootstrap 4 -->
+    <link rel="stylesheet" href="../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="../plugins/jqvmap/jqvmap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="../plugins/daterangepicker/daterangepicker.css">
+    <!-- summernote -->
+    <link rel="stylesheet" href="../plugins/summernote/summernote-bs4.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
 
     {{-- my included Style sheet  --}}
-    
+
 
     {{-- for check box icon --}}
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
@@ -48,7 +48,7 @@
     <style>
 
     </style>
-    
+
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -58,17 +58,17 @@
         <nav class="main-header navbar navbar-expand navbar-white navbar-light">
             <!-- Left navbar links -->
             <ul class="navbar-nav">
+                <form class="form-inline ml-0 navform " style="margin-left: 18px!important;">
+                    <div class="input-group input-group-sm">
 
+                        <input class="form-control form-control-navbar" type="search" placeholder="Search Emails" aria-label="Search" style="height: 40px;border-radius: 5px !important;">
+                    </div>
+                </form>
 
             </ul>
             <!-- SEARCH FORM -->
             {{-- @include('home.navbar')  --}}
-            <form class="form-inline ml-0 navform " style="margin-left: 18px!important;">
-                <div class="input-group input-group-sm">
 
-                    <input class="form-control form-control-navbar" type="search" placeholder="Search Emails" aria-label="Search" style="width: 107%;">
-                </div>
-            </form>
             <!-- Right navbar links -->
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -97,16 +97,15 @@
                     </div>
                 </div>
                 <div id="center">
-                    <a class="btn btn-info" id="mypopupBtn" data-toggle="modal" data-target="#compose_popup_content" href="javascript:;" style="border-radius:0px !important;color: white !important;background-color: #4195D1;">
+                    <a class="btn btn-info" id="mypopupBtn" data-toggle="modal" data-target="#compose_popup_content" href="javascript:;" style="border-radius:0px !important;color: white !important;background-color: #4195D1;width: 125px;height: 35px;">
                         Compose
                     </a>
 
                 </div>
 
                 <!-- Sidebar Menu -->
-                <nav class="mt-2" id="nav">
+                <nav class="mt-2" id="aside_nav">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-
                         <li class="nav-item">
                             <a href="{{ url('home')}}" class="nav-link">
                                 <p>
@@ -131,28 +130,28 @@
                             </a>
                         </li>
 
-                        <li class="nav-item has-treeview menu-off">
-                            <a href="{{ url('home/settings')}}" class="nav-link">
+                        <li class=" has-treeview menu-open">
+                            <a href="#" class="nav-link ">
 
                                 <p>
                                     Settings
-                                    <i class="right fas fa-angle-left"></i>
+
                                 </p>
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="{{ url('home/profile')}}" class="nav-link" ">
-                                                &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<p>Profile</p>
-                                            </a>
-                                        </li>
-                                        <li class=" nav-item">
-                                        <a href="{{ url('home/privacy')}}" class="nav-link">
-                                            &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<p>Privacy</p>
-                                        </a>
+                                    <a href="{{ url('home/profile')}}" class="nav-link">
+                                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<p>Profile</p>
+                                    </a>
+                                </li>
+                                <li class=" nav-item">
+                                    <a href="{{ url('home/privacy')}}" class="nav-link">
+                                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<p>Privacy</p>
+                                    </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="{{ url('home/upload')}}" class="nav-link">
-                                        &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<p>Upload</p>
+                                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<p>Upload</p>
                                     </a>
                                 </li>
 
@@ -160,22 +159,22 @@
                         </li>
                         <li class="nav-item">
                             <a href="{{ url('home/logout')}}" class=" nav-link" ">
-                                    Logout
-                                    </a>
-                            </li>
+                              <p>Logout</p>
+                            </a>
+                        </li>
                     </ul>
-                    
                 </nav>
                 <!-- /.sidebar-menu -->
             </div>
             <!-- /.sidebar -->
         </aside>
-                
-            @yield('content')
-<!-------------------------- Modal content ------------------------------------------------->
-<div  class   = " " id=" compose_popup">
+
+        @yield('content')
+        <!-------------------------- Modal content ------------------------------------------------->
+      <div class=" " id=" compose_popup">
                                 <div class="modal fade" id="compose_popup_content" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" role="dialog">
-                                    <div class="modal-dialog modal-lg right-zero" role="document" style="    width: 52%;">
+
+                                    <div class="modal-dialog modal-lg right-zero" role="document" style="width: 54%;">
                                         <div class="modal-content">
                                             <div class="modal_header">
                                                 <div class="modal_header_left">
@@ -198,26 +197,12 @@
                                             </div>
                                         </div>
                                     </div>
+
                                 </div>
 
             </div>
-
-
-
-
-
-
-
             <!-- /.content-wrapper -->
-            <footer class=" main-footer">
 
-            </footer>
-            <!-- Control Sidebar -->
-            <aside class="control-sidebar control-sidebar-dark">
-
-                <!-- Control sidebar content goes here -->
-            </aside>
-            <!-- /.control-sidebar -->
     </div>
     <!-- ./wrapper -->
 
@@ -231,56 +216,56 @@
 
     </script>
     <!-- Bootstrap 4 -->
-<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- ChartJS -->
-<script src="../plugins/chart.js/Chart.min.js"></script>
-<!-- Sparkline -->
-<script src="../plugins/sparklines/sparkline.js"></script>
-<!-- JQVMap -->
-<script src="../plugins/jqvmap/jquery.vmap.min.js"></script>
-<script src="../plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
-<!-- jQuery Knob Chart -->
-<script src="../plugins/jquery-knob/jquery.knob.min.js"></script>
-<!-- daterangepicker -->
-<script src="../plugins/moment/moment.min.js"></script>
-<script src="../plugins/daterangepicker/daterangepicker.js"></script>
-<!-- Tempusdominus Bootstrap 4 -->
-<script src="../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-<!-- Summernote -->
-<script src="../plugins/summernote/summernote-bs4.min.js"></script>
-<!-- overlayScrollbars -->
-<script src="../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-<!-- AdminLTE App -->
-<script src="dist/js/adminlte.js"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="dist/js/pages/dashboard.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="dist/js/demo.js"></script>
+    <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ChartJS -->
+    <script src="../plugins/chart.js/Chart.min.js"></script>
+    <!-- Sparkline -->
+    <script src="../plugins/sparklines/sparkline.js"></script>
+    <!-- JQVMap -->
+    <script src="../plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="../plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="../plugins/jquery-knob/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="../plugins/moment/moment.min.js"></script>
+    <script src="../plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script src="../plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="dist/js/pages/dashboard.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="dist/js/demo.js"></script>
     <!------------------ my js file link ----------------------------------------->
     <script src="{{url('assets/js/custom.js')}}"></script>
     <script src="/js/myjs.js"></script>
-    
+
     <!------------ include summernote bootstrap3/js------------------------------------->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
-    
+
     <script>
         $(window).on('load', function() {
             $('.popup_summernote').summernote({
-                placeholder: 'Hello stand alone ui',
-        tabsize: 2,
-        height: 120,
-        toolbar: [
-          ['style', ['style']],
-          ['font', ['bold', 'underline', 'clear']],
-          ['color', ['color']],
-          ['para', ['ul', 'ol', 'paragraph']],
-          ['table', ['table']],
-          ['insert', ['link', 'picture', 'video']],
-          ['view', ['fullscreen', 'codeview', 'help']]
-        ]
-      });
+                placeholder: 'Hello stand alone ui'
+                , tabsize: 2
+                , height: 120
+                , toolbar: [
+                    ['style', ['style']]
+                    , ['font', ['bold', 'underline', 'clear']]
+                    , ['color', ['color']]
+                    , ['para', ['ul', 'ol', 'paragraph']]
+                    , ['table', ['table']]
+                    , ['insert', ['link', 'picture', 'video']]
+                    , ['view', ['fullscreen', 'codeview', 'help']]
+                ]
+            });
         });
 
     </script>

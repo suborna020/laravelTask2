@@ -15,8 +15,7 @@
                         <form action=".#" method="post">
                             <div class="input-group mb-2">
                                 <p class="" id="center">
-                                    <img src="../img/Group 99.svg" alt="Avatar"
-                                        style="width:80px;border-radius: 20%;" />
+                                    <img src="../img/Group 99.svg" alt="Avatar" style="width:80px;border-radius: 20%;" />
                                 </p>
 
 
@@ -44,9 +43,10 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="privacy_email" class="col-sm-11 col-form-label mb-2 left_align"><label
-                                        for="staticEmail"
-                                        class="col-sm-11 col-form-label left_align mb-2">Email</label></label>
+                                <label for="privacy_email" class="col-sm-11 col-form-label mb-2 left_align"> 
+                                </label>
+                                <label for="staticEmail" class="col-sm-11 col-form-label left_align mb-2">Email</label>
+                               
                                 <select class="form-control" id="privacy_email">
                                     <option>Public</option>
                                     <option>Friends</option>

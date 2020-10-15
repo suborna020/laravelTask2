@@ -19,18 +19,15 @@
                                     <img src="../img/Group 99.svg" alt="Avatar" style="width:80px;border-radius: 20%;" />
                                 </p>
                             </div>
-                            <div class="">
-                                <div class="col-sm-11 ">
-                                    <label for="staticEmail">
-                                        <h2>Personal Details</h2>
-                                    </label>
-                                </div>
-                                <div class="col-sm-1">
+
+                            <div class="form-group" id="marginbottom">
+                                <label for="staticEmail">
+                                    <h5>Personal Details</h5>
+                                </label>
+                                <div class="col-sm-1 right_align">
                                     <i class="fas fa-edit fa-edit"></i>
                                 </div>
                             </div>
-                            </div>
-                           
                             <div class="form-group" id="marginbottom">
                                 <label for="name">Name </label>
                                 <input type="name" class="form-control" id="name" aria-describedby="name" placeholder="Adam Smith">
@@ -51,10 +48,8 @@
                                 <label for="newpassword">Enter New Password</label>
                                 <input type="newpassword" class="form-control" id="newpassword" placeholder="Confirm password">
                             </div>
-
-
                             <div class=" text-center mb-2">
-                                <a href="#" class="btn btn-block btn-primary">
+                                <a href="#" class="btn btn-block btn-primary" style="background-color: #4195D1;">
                                     Save
                                 </a>
                             </div>
@@ -70,10 +65,7 @@
         </div>
 
 
-</div>
-
-
-</section>
-<!-- /.content -->
+    </section>
+    <!-- /.content -->
 </div>
 @endsection
