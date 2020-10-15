@@ -52,6 +52,7 @@
                             <div class="col-sm-9" style="">
 
                                 <h5><b>Mr.robin</b></h5>
+                                <p class="msg_email" style="font-size: 10px;">marie@mail.com</p>
                                 <p class="msg_subjct bold float-left">Lorem ipsum dolor :</p>
                                 <p class="float-left"> Hello. How are you today?Hello. How are you today?ss</p>
                             </div>
@@ -67,6 +68,7 @@
                             <div class="col-sm-9" style="">
 
                                 <h5><b>Mr.robin</b></h5>
+                                <p class="msg_email" style="font-size: 10px;">marie@mail.com</p>
                                 <p class="msg_subjct bold float-left">Lorem ipsum dolor :</p>
                                 <p class="float-left"> Hello. How are you today?Hello. How are you today?ss</p>
                             </div>
@@ -83,6 +85,7 @@
                                 <div class="col-sm-9" style="">
 
                                     <h5><b>Mr.robin</b></h5>
+                                    <p class="msg_email" style="font-size: 10px;">marie@mail.com</p>
                                     <p class="msg_subjct bold float-left">Lorem ipsum dolor :</p>
                                     <p class="float-left"> Hello. How are you today?Hello. How are you today?ss</p>
                                 </div>
