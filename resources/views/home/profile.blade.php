@@ -41,14 +41,14 @@
                                 <input type="file" class="form-control-file" id="exampleFormControlFile1">
                             </div>
                             <div class="form-group" id="marginbottom">
-                                <label for="password">Change Password</label>
-                                <input type="password" class="form-control" id="password" placeholder="Password">
+                                <label for="address">Address</label>
+                                <input type="text" class="form-control" id="address" placeholder="Full Address">
                             </div>
                             <div class="form-group" id="marginbottom">
-                                <label for="newpassword">Enter New Password</label>
-                                <input type="newpassword" class="form-control" id="newpassword" placeholder="Confirm password">
-                            </div>
-                            <div class=" text-center mb-2">
+                                <label for="number">Phone Number</label>
+                                <input type="text" class="form-control" id="number" placeholder="Phone Number">
+                            </div><br>
+                            <div class=" text-center" id="marginbottom">
                                 <a href="#" class="btn btn-block btn-primary" style="background-color: #4195D1;">
                                     Save
                                 </a>

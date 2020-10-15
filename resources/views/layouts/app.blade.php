@@ -61,7 +61,7 @@
                 <form class="form-inline ml-0 navform " style="margin-left: 18px!important;">
                     <div class="input-group input-group-sm">
 
-                        <input class="form-control form-control-navbar" type="search" placeholder="Search Emails" aria-label="Search" style="height: 40px;border-radius: 5px !important;">
+                        <input class="form-control form-control-navbar" type="search" placeholder="Search Emails" aria-label="Search" style="height: 35px;border-radius: 5px !important;">
                     </div>
                 </form>
 

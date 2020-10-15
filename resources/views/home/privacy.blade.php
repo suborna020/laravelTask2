@@ -31,7 +31,7 @@
                                 </label>
                                 <label for="staticEmail" class="col-sm-11 col-form-label mb-2 left_align">Who can see
                                     your contact
-                                    imformation? </label>
+                                    information? </label>
                             </div>
 
                             <div class="form-group">
@@ -43,16 +43,23 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="privacy_email" class="col-sm-11 col-form-label mb-2 left_align"> 
+                                <label for="privacy_email" class="col-sm-11 col-form-label mb-2 left_align">
                                 </label>
                                 <label for="staticEmail" class="col-sm-11 col-form-label left_align mb-2">Email</label>
-                               
+
                                 <select class="form-control" id="privacy_email">
                                     <option>Public</option>
                                     <option>Friends</option>
                                     <option>Only Me</option>
                                 </select>
                             </div>
+                            <div class="form-group">
+                                <label for="privacy_email" class="col-sm-11 col-form-label mb-2 left_align">
+                                </label>
+                                <label for="password" class="col-sm-11 col-form-label left_align mb-2">Change Password</label>
+                                <input type="password" class="form-control" id="Old password" placeholder="Password">
+                            </div>
+                            
                         </form>
                     </div>
                     <!-- /.login-card-body -->
