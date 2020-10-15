@@ -23,7 +23,7 @@
                     <br>
                     <div class="center">
                     <small  class="form-text text-muted">
-                    Forgot <a href="#">password?</a>
+                    Forgot <a href="{{ url('forgetp')}}">password?</a>
                     OR  <a href="{{ url('sign_up')}}"> Sign UP</a>
                     </small>
                     </div>

@@ -15,6 +15,11 @@ class HomeController extends Controller
     {
         return view('sign_up');
     }
+    public function forgetp()
+    {
+        return view('forgetp');
+    }
+    
     ////////////////////
     public function home()
     {

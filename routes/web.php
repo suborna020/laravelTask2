@@ -22,6 +22,8 @@ Route::get('/', function () {
 // welcome page
 Route::get('/welcome', [HomeController::class, 'welcome']);
 Route::get('/sign_up', [HomeController::class, 'sign_up']);
+Route::get('/forgetp', [HomeController::class, 'forgetp']);
+
 
 
 Route::get('/home', [HomeController::class, 'home']);
