@@ -7,6 +7,11 @@ $(window).on('load', function () {
     jQuery('body').on('click','#text_bcc', function(event) {        
         jQuery('#bcc').toggle();
    });
+   //$(".dashboard_msg_list").find(".checkbox").show();
+   $(".dashboard_msg_list").find(".checkbox").hide();
+    jQuery('body').on('click','#msg_mark', function(event) {        
+        jQuery('.checkbox').toggle();
+   });
      
 });
 // $(document).on('submit', '.database_operation', function () {

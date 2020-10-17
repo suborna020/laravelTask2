@@ -30,7 +30,11 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.ui.widget@1.10.3/jquery.ui.widget.js"></script>
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
 
@@ -151,7 +155,7 @@
       <div class=" " id=" compose_popup">
                                 <div class="modal fade" id="compose_popup_content" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" role="dialog">
                                     <div class="modal-dialog modal-lg right-zero" role="document" style="width: 54%;">
-                                        <div class="modal-content">
+                                        <div class="modal-content" style="background-color: unset;">
                                             <div class="modal_header">
                                                 <div class="modal_header_left">
                                                     <h5>New message</h5>
@@ -188,9 +192,9 @@
     <!-- ./wrapper -->
 
     <!-- jQuery -->
-    <script src="../plugins/jquery/jquery.min.js"></script>
+    {{--  <script src="../plugins/jquery/jquery.min.js"></script>
     <!-- jQuery UI 1.11.4 -->
-    <script src="../plugins/jquery-ui/jquery-ui.min.js"></script>
+    <script src="../plugins/jquery-ui/jquery-ui.min.js"></script>  --}}
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
     <script>
         $.widget.bridge('uibutton', $.ui.button)
@@ -219,7 +223,7 @@
     <!-- AdminLTE App -->
     <script src="dist/js/adminlte.js"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <script src="dist/js/pages/dashboard.js"></script>
+    {{--  <script src="dist/js/pages/dashboard.js"></script>  --}}
     <!-- AdminLTE for demo purposes -->
     <script src="dist/js/demo.js"></script>
     <!------------------ my js file link ----------------------------------------->

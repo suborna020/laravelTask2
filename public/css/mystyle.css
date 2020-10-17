@@ -181,6 +181,12 @@ div.card {
     padding: 8px;
     margin-top: 20px !important;
 }
+.dashboard_msg_list .checkbox {
+    float: left;
+    position: absolute;
+    outline: 8px solid #4195d1;
+    outline-style: double;
+}
 right {
     text-align: right;
 }
@@ -237,6 +243,7 @@ hr {
     background-color: #3B3B53;
     color: white;
     padding: 15px;
+    border-radius: 12px 12px 0px 0px;
 }
 #compose_popup_content .modal_header_left {
    float: left;
@@ -249,15 +256,13 @@ hr {
  }
  #compose_popup_content .modal-body {
     background-color: #213F7E;
+    border-radius: 0px 0px 12px 12px;
 }
 
   #compose_popup_content  .right-zero{
     margin-right: 0 !important;
  }
- .invisible {
-    /* visibility: hidden; */
-    display: none;
-  }
+ 
 
 /* ------------------------------------------------- */
 
