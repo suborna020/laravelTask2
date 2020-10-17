@@ -224,7 +224,7 @@
     <script src="dist/js/demo.js"></script>
     <!------------------ my js file link ----------------------------------------->
     <script src="{{url('assets/js/custom.js')}}"></script>
-    <script src="/js/myjs.js"></script>
+    <script src="{{url('js/myjs.js')}}"></script>
 
     <!------------ include summernote bootstrap3/js------------------------------------->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
