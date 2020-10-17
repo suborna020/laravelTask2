@@ -145,10 +145,9 @@
         </aside>
 
         @yield('content')
-        <!-------------------------- Modal content ------------------------------------------------->
+        <!--------------- Modal content ------------------------------------------------->
       <div class=" " id=" compose_popup">
                                 <div class="modal fade" id="compose_popup_content" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" role="dialog">
-
                                     <div class="modal-dialog modal-lg right-zero" role="document" style="width: 54%;">
                                         <div class="modal-content">
                                             <div class="modal_header">
@@ -157,13 +156,18 @@
                                                 </div>
                                                 <div class="modal_header_right" style="">
                                                     <i class="far fa-times-circle fa-lg" data-dismiss="modal" aria-label="Close"></i>
-
                                                 </div>
                                             </div>
                                             <div class="modal-body">
                                                 <input type="text" class="form-control" id="from" placeholder="From">
 
-                                                <input type="text" class="form-control" id="to" placeholder="To">
+                                                <div class="input form-control" id="to">To 
+                                                <a href="#" onclick="change()" value="cc_Hide" class="right_align text_black" id="text_cc">&nbsp;&nbsp;cc</a>
+
+                                                <a href="#" onclick="change()" value="bcc_Hide" class="right_align text_black" id="text_bcc"> bcc</a></div>
+
+                                                <input type="text" class="form-control " id="cc" placeholder="cc">
+                                                <input type="text" class="form-control " id="bcc" placeholder="bcc">
 
                                                 <input type="text" class="form-control" id="subject" placeholder="Subject">
 

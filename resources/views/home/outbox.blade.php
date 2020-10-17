@@ -63,8 +63,8 @@
 
                                 <h5><b>Mr.robin</b></h5>
                                 <p class="msg_email" style="font-size: 10px;">marie@mail.com</p>
-                                <p class="msg_subjct bold float-left">Lorem ipsum dolor :</p>
-                                <p class="float-left"> Hello. How are you today?Hello. How are you today?ss</p>
+                                <p class="msg_subjct bold hide_line float-left">Lorem ipsum dolor :</p>
+                                <p class="float-left hide_line"> Hello. How are you today?Hello. How are you today?ss</p>
                             </div>
                             <div class="col-sm-2 right_align" style="">
                                 just now
@@ -79,8 +79,8 @@
 
                                 <h5><b>Mr.robin</b></h5>
                                 <p class="msg_email" style="font-size: 10px;">marie@mail.com</p>
-                                <p class="msg_subjct bold float-left">Lorem ipsum dolor :</p>
-                                <p class="float-left"> Hello. How are you today?Hello. How are you today?ss</p>
+                                <p class="msg_subjct bold hide_line float-left">Lorem ipsum dolor :</p>
+                                <p class="float-left hide_line"> Hello. How are you today?Hello. How are you today?ss</p>
                             </div>
                             <div class="col-sm-2 right_align" style="">
                                 just now
@@ -96,8 +96,8 @@
 
                                     <h5><b>Mr.robin</b></h5>
                                     <p class="msg_email" style="font-size: 10px;">marie@mail.com</p>
-                                    <p class="msg_subjct bold float-left">Lorem ipsum dolor :</p>
-                                    <p class="float-left"> Hello. How are you today?Hello. How are you today?ss</p>
+                                    <p class="msg_subjct bold hide_line float-left">Lorem ipsum dolor :</p>
+                                    <p class="float-left hide_line"> Hello. How are you today?Hello. How are you today?ss</p>
                                 </div>
                                 <div class="col-sm-2 right_align" style="">
                                     11.10

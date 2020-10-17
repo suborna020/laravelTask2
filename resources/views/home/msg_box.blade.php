@@ -48,7 +48,7 @@
                                 <div class="msg_footer msg">
                                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
                                 </div>
-                                <a class="btn btn-info msg_button msg" id="" href="javascript:;" >
+                                <a class="btn btn-info msg_button msg" id="" href="javascript:;" data-toggle="modal" data-target="#compose_popup_content">
                                     REPLY
                                 </a>
                             </div>

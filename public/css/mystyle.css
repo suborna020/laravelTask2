@@ -67,6 +67,9 @@ body {
 .text_white {
     color: white;
 }
+.text_black {
+    color: black;
+}
 
 #center {
     margin: 0 auto !important;
@@ -95,8 +98,6 @@ body {
 }
 .inbox a{
     color: black !important;
-    
-
 }
 .inbox a:-webkit-any-link {
     text-decoration: none;
@@ -149,6 +150,12 @@ padding: 20px 0px;
 .bold{
     font-weight: bold;
 }
+.hide_line {
+    white-space: nowrap; 
+    max-width:60%; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+  }
 
 
 
@@ -247,5 +254,10 @@ hr {
   #compose_popup_content  .right-zero{
     margin-right: 0 !important;
  }
+ .invisible {
+    /* visibility: hidden; */
+    display: none;
+  }
+
 /* ------------------------------------------------- */
 

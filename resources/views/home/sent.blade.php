@@ -56,7 +56,7 @@
                     <!-- /.card-body -->
                     <div class="cart-body inbox ">
 
-                        <div class="row msg_box unread_msg" onclick="window.location.href='/home/msg_box'">
+                        <div class="row msg_box  unread_msg" onclick="window.location.href='/home/msg_box'">
 
 
                             <div class=" col-sm-1" style="max-width: 5.333333% !important;">
@@ -65,8 +65,8 @@
                             <div class="col-sm-9" style="">
 
                                 <h5><b>Mr.robin</b></h5>
-                                <p class="msg_subjct bold float-left">Lorem ipsum dolor :</p>
-                                <p class="float-left"> Hello. How are you today?Hello. How are you today?ss</p>
+                                <p class="msg_subjct bold hide_line float-left">Lorem ipsum dolor :</p>
+                                <p class="float-left hide_line"> Hello. How are  you today?Hello. How are you today?Hello. How are  you today?Hello. How are you todayHello. How are  you today?Hello. How are you todayssHello. How are  you today?Hello. How are you today</p>
                             </div>
                             <div class="col-sm-2 right_align" style="">
                                 just now
@@ -82,8 +82,8 @@
                             <div class="col-sm-9" style="">
 
                                 <h5><b>Mr.robin</b></h5>
-                                <p class="msg_subjct bold float-left">Lorem ipsum dolor :</p>
-                                <p class="float-left"> Hello. How are you today?Hello. How are you today?ss</p>
+                                <p class="msg_subjct bold hide_line float-left">Lorem ipsum dolor :</p>
+                                <p class="float-left hide_line"> Hello. How are you today?Hello. How are you today?ss</p>
                             </div>
                             <div class="col-sm-2 right_align" style="">
                                 just now
@@ -98,8 +98,8 @@
                             <div class="col-sm-9" style="">
 
                                 <h5><b>Mr.robin</b></h5>
-                                <p class="msg_subjct bold float-left">Lorem ipsum dolor :</p>
-                                <p class="float-left"> Hello. How are you today?Hello. How are you today?ss</p>
+                                <p class="msg_subjct bold hide_line float-left">Lorem ipsum dolor :</p>
+                                <p class="float-left hide_line"> Hello. How are you today?Hello. How are you today?ss</p>
                             </div>
                             <div class="col-sm-2 right_align" style="">
                                 11.10
