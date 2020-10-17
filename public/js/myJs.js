@@ -1,4 +1,3 @@
-
 $(window).on('load', function () {
     $(".modal-dialog").find("#cc").hide();
     jQuery('body').on('click','#text_cc', function(event) {        
