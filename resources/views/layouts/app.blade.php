@@ -164,9 +164,9 @@
                                                 <input type="text" class="form-control" id="from" placeholder="From">
 
                                                 <div class="input form-control" id="to">To 
-                                                <a href="#" onclick="change()" value="cc_Hide" class="right_align text_black" id="text_cc">&nbsp;&nbsp;cc</a>
+                                                <a href="#" value="cc_Hide" class="right_align text_black" id="text_cc">&nbsp;&nbsp;cc</a>
 
-                                                <a href="#" onclick="change()" value="bcc_Hide" class="right_align text_black" id="text_bcc"> bcc</a></div>
+                                                <a href="#"  value="bcc_Hide" class="right_align text_black" id="text_bcc"> bcc</a></div>
 
                                                 <input type="text" class="form-control " id="cc" placeholder="cc">
                                                 <input type="text" class="form-control " id="bcc" placeholder="bcc">
