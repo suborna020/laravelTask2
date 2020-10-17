@@ -36,7 +36,7 @@
                 <div class="card dashboard_msg_list" style="width: 100%;padding: 20px;padding-top: 0;">
                     <div class="msg_card_header">
                         <div class="card-tools" style="float: left;">
-                            <input type="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="checkbox" class="msg_mark" id="msg_mark">&nbsp;&nbsp;&nbsp;&nbsp;
                             {{-- <i class="material-icons">&#xe5d5;</i> --}}
                             <span class="refresh">↻</span>
                         </div>
@@ -55,58 +55,68 @@
                     </div>
                     <!-- /.card-body -->
                     <div class="cart-body inbox ">
+                        <div>
+                            <input type="checkbox" class="checkbox" name="check-1" value="check-1" id="check-1">
+                            <div class="row msg_box  unread_msg" onclick="window.location.href='/home/msg_box'">
+                                <div class=" col-sm-1" style="max-width: 5.333333% !important;padding-left: 0;padding-right: 0;">
 
-                        <div class="row msg_box  unread_msg" onclick="window.location.href='/home/msg_box'">
+                                    <img src="../img/Group 99.svg" alt="Avatar" style="width:40px;border-radius: 30%;" ; />
+                                </div>
+                                <div class="col-sm-9" style="">
 
+                                    <h5><b>Mr.robin</b></h5>
+                                    <p class="msg_subjct bold hide_line float-left">Lorem ipsum dolor :</p>
+                                    <p class="float-left hide_line"> Hello. How are you today?Hello. How are you today?Hello. How are you today?Hello. How are you todayHello. How are you today?Hello. How are you todayssHello. How are you today?Hello. How are you today</p>
+                                </div>
+                                <div class="col-sm-2 right_align" style="">
+                                    just now
+                                </div>
 
-                            <div class=" col-sm-1" style="max-width: 5.333333% !important;">
-                                <img src="../img/Group 99.svg" alt="Avatar" style="width:40px;border-radius: 30%;" />
                             </div>
-                            <div class="col-sm-9" style="">
+                            <hr style="">
+                        </div>
+                        <div>
+                            <input type="checkbox" name="check-2" value="check-2" id="check-2" class="checkbox">
+                            <div class="row msg_box  unread_msg" onclick="window.location.href='/home/msg_box'">
+                                <div class=" col-sm-1" style="max-width: 5.333333% !important;padding-left: 0;padding-right: 0;">
 
-                                <h5><b>Mr.robin</b></h5>
-                                <p class="msg_subjct bold hide_line float-left">Lorem ipsum dolor :</p>
-                                <p class="float-left hide_line"> Hello. How are  you today?Hello. How are you today?Hello. How are  you today?Hello. How are you todayHello. How are  you today?Hello. How are you todayssHello. How are  you today?Hello. How are you today</p>
-                            </div>
-                            <div class="col-sm-2 right_align" style="">
-                                just now
-                            </div>
+                                    <img src="../img/Group 99.svg" alt="Avatar" style="width:40px;border-radius: 30%;" ; />
+                                </div>
+                                <div class="col-sm-9" style="">
 
+                                    <h5><b>Mr.robin</b></h5>
+                                    <p class="msg_subjct bold hide_line float-left">Lorem ipsum dolor :</p>
+                                    <p class="float-left hide_line"> Hello. How are you today?Hello. How are you today?Hello. How are you today?Hello. How are you todayHello. How are you today?Hello. How are you todayssHello. How are you today?Hello. How are you today</p>
+                                </div>
+                                <div class="col-sm-2 right_align" style="">
+                                    just now
+                                </div>
+
+                            </div>
+                            <hr style="">
                         </div>
 
-                        <hr style="">
-                        <div class="row msg_box unread_msg" onclick="window.location.href='/home/msg_box'">
-                            <div class=" col-sm-1" style="max-width: 5.333333% !important;">
-                                <img src="../img/Group 99.svg" alt="Avatar" style="width:40px;border-radius: 30%;" />
-                            </div>
-                            <div class="col-sm-9" style="">
+                        <div>
+                            <input type="checkbox" name="check-3" value="check-3" id="check-3" class="checkbox">
+                            <div class="row msg_box" onclick="window.location.href='/home/msg_box'">
 
-                                <h5><b>Mr.robin</b></h5>
-                                <p class="msg_subjct bold hide_line float-left">Lorem ipsum dolor :</p>
-                                <p class="float-left hide_line"> Hello. How are you today?Hello. How are you today?ss</p>
+
+                                <div class=" col-sm-1" style="max-width: 5.333333% !important;padding-left: 0;padding-right: 0;">
+                                    <img src="../img/Group 99.svg" alt="Avatar" style="width:40px;border-radius: 30%;" ; />
+                                </div>
+                                <div class="col-sm-9" style="">
+
+                                    <h5><b>Mr.robin</b></h5>
+                                    <p class="msg_subjct bold hide_line float-left">Lorem ipsum dolor :</p>
+                                    <p class="float-left hide_line"> Hello. How are you today?Hello. How are you today?Hello. How are you today?Hello. How are you todayHello. How are you today?Hello. How are you todayssHello. How are you today?Hello. How are you today</p>
+                                </div>
+                                <div class="col-sm-2 right_align" style="">
+                                    just now
+                                </div>
+
                             </div>
-                            <div class="col-sm-2 right_align" style="">
-                                just now
-                            </div>
+                            <hr style="">
                         </div>
-                        <hr style="">
-
-                        <div class="row msg_box " onclick="window.location.href='/home/msg_box'">
-                            <div class=" col-sm-1" style="max-width: 5.333333% !important;">
-                                <img src="../img/Group 99.svg" alt="Avatar" style="width:40px;border-radius: 30%;" />
-                            </div>
-                            <div class="col-sm-9" style="">
-
-                                <h5><b>Mr.robin</b></h5>
-                                <p class="msg_subjct bold hide_line float-left">Lorem ipsum dolor :</p>
-                                <p class="float-left hide_line"> Hello. How are you today?Hello. How are you today?ss</p>
-                            </div>
-                            <div class="col-sm-2 right_align" style="">
-                                11.10
-                            </div>
-                        </div>
-
-                        <hr style="">
                     </div>
                 </div>
             </div>
