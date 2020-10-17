@@ -29,7 +29,7 @@
     </nav>
 
     <!-- Main content -->
-    <section class="content">
+   <section class="content">
         <div class="row">
             <div class="col-md-12" style="padding: 0 !important;">
 
@@ -55,61 +55,61 @@
                     </div>
                     <!-- /.card-body -->
                     <div class="cart-body inbox ">
-                        <div class="row msg_box unread_msg" onclick="window.location.href='/home/msg_box'>
+                        <div class="row msg_box unread_msg" onclick="window.location.href='/home/msg_box'">
                             <div class=" col-sm-1" style="max-width: 5.333333% !important;">
-                            <img src="../img/Group 99.svg" alt="Avatar" style="width:40px;border-radius: 30%;" />
-                        </div>
-                        <div class="col-sm-9" style="">
+                                <img src="../img/Group 99.svg" alt="Avatar" style="width:40px;border-radius: 30%;" />
+                            </div>
+                            <div class="col-sm-9" style="">
 
-                            <h5><b>Mr.robin</b></h5>
-                            <p class="msg_email" style="font-size: 10px;">marie@mail.com</p>
-                            <p class="msg_subjct bold float-left">Lorem ipsum dolor :</p>
-                            <p class="float-left"> Hello. How are you today?Hello. How are you today?ss</p>
+                                <h5><b>Mr.robin</b></h5>
+                                <p class="msg_email" style="font-size: 10px;">marie@mail.com</p>
+                                <p class="msg_subjct bold float-left">Lorem ipsum dolor :</p>
+                                <p class="float-left"> Hello. How are you today?Hello. How are you today?ss</p>
+                            </div>
+                            <div class="col-sm-2 right_align" style="">
+                                just now
+                            </div>
                         </div>
-                        <div class="col-sm-2 right_align" style="">
-                            just now
-                        </div>
-                    </div>
-                    <hr style="">
-                    <div class="row msg_box unread_msg" onclick="window.location.href='/home/msg_box'>
+                        <hr style="">
+                        <div class="row msg_box unread_msg" onclick="window.location.href='/home/msg_box'">
                             <div class=" col-sm-1" style="max-width: 5.333333% !important;">
-                        <img src="../img/Group 99.svg" alt="Avatar" style="width:40px;border-radius: 30%;" />
-                    </div>
-                    <div class="col-sm-9" style="">
+                                <img src="../img/Group 99.svg" alt="Avatar" style="width:40px;border-radius: 30%;" />
+                            </div>
+                            <div class="col-sm-9" style="">
 
-                        <h5><b>Mr.robin</b></h5>
-                        <p class="msg_email" style="font-size: 10px;">marie@mail.com</p>
-                        <p class="msg_subjct bold float-left">Lorem ipsum dolor :</p>
-                        <p class="float-left"> Hello. How are you today?Hello. How are you today?ss</p>
-                    </div>
-                    <div class="col-sm-2 right_align" style="">
-                        just now
-                    </div>
-                </div>
-                <hr style="">
-
-                <div class="row msg_box " onclick="window.location.href='/home/msg_box'>
+                                <h5><b>Mr.robin</b></h5>
+                                <p class="msg_email" style="font-size: 10px;">marie@mail.com</p>
+                                <p class="msg_subjct bold float-left">Lorem ipsum dolor :</p>
+                                <p class="float-left"> Hello. How are you today?Hello. How are you today?ss</p>
+                            </div>
+                            <div class="col-sm-2 right_align" style="">
+                                just now
+                            </div>
+                        </div>
+                        <hr style="">
+                        
+                            <div class="row msg_box " onclick="window.location.href='/home/msg_box'">
                                 <div class=" col-sm-1" style="max-width: 5.333333% !important;">
-                    <img src="../img/Group 99.svg" alt="Avatar" style="width:40px;border-radius: 30%;" />
-                </div>
-                <div class="col-sm-9" style="">
+                                    <img src="../img/Group 99.svg" alt="Avatar" style="width:40px;border-radius: 30%;" />
+                                </div>
+                                <div class="col-sm-9" style="">
 
-                    <h5><b>Mr.robin</b></h5>
-                    <p class="msg_email" style="font-size: 10px;">marie@mail.com</p>
-                    <p class="msg_subjct bold float-left">Lorem ipsum dolor :</p>
-                    <p class="float-left"> Hello. How are you today?Hello. How are you today?ss</p>
-                </div>
-                <div class="col-sm-2 right_align" style="">
-                    11.10
+                                    <h5><b>Mr.robin</b></h5>
+                                    <p class="msg_email" style="font-size: 10px;">marie@mail.com</p>
+                                    <p class="msg_subjct bold float-left">Lorem ipsum dolor :</p>
+                                    <p class="float-left"> Hello. How are you today?Hello. How are you today?ss</p>
+                                </div>
+                                <div class="col-sm-2 right_align" style="">
+                                    11.10
+                                </div>
+                            </div>
+                        
+                        <hr style="">
+                    </div>
                 </div>
             </div>
-
-            <hr style="">
         </div>
-</div>
-</div>
-</div>
-</section>
+    </section>
 </div>
 
 @endsection
