@@ -28,7 +28,7 @@ body:not(.sidebar-mini-md) .main-header {
 body:not(.sidebar-mini-md) .main-footer,
 body:not(.sidebar-mini-md) .main-header {
     transition: margin-left 0.3s ease-in-out;
-    margin-left: 188px !important;
+    padding-left: 190px;
 }
 
 /* {
@@ -39,6 +39,7 @@ body:not(.sidebar-mini-md) .main-header {
     min-height: 80px;
     background-color: #213f7e;
     background-image: linear-gradient(to right, #213f7e, #4195d1);
+    padding-left: 24px !important;
 }
 
 aside {

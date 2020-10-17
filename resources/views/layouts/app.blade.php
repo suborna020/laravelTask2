@@ -55,32 +55,7 @@
 
     <div class=" wrapper">
 
-        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-            <!-- Left navbar links -->
-            <ul class="navbar-nav">
-                <form class="form-inline ml-0 navform " style="margin-left: 18px!important;">
-                    <div class="input-group input-group-sm">
-
-                        <input class="form-control form-control-navbar" type="search" placeholder="Search Emails" aria-label="Search" style="height: 35px;border-radius: 5px !important;">
-                    </div>
-                </form>
-
-            </ul>
-            <!-- SEARCH FORM -->
-            {{-- @include('home.navbar')  --}}
-
-            <!-- Right navbar links -->
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <div class="text_white" style="font-size: 20px;">
-                        &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <img src="../img/Group 99.svg" alt="Avatar" id="profile_img" style="width:40px" class="float-right" />
-                </li>
-            </ul>
-        </nav>
+        
         <!-- /.navbar -->
 
         <!-- Main Sidebar Container -->

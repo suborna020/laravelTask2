@@ -4,19 +4,30 @@
 
 @section('content')
 <div class="content-wrapper" id="content" style="background: white;">
-    <!-- Content Header (Page header) -->
-    {{-- <div class="content-header">
-        <div class="container-fluid">
-            <div class="row mb-2">
-                <div class="col-sm-6">
-                </div><!-- /.col -->
-                <div class="col-sm-6">
-                    <ol class="breadcrumb float-sm-right">
-                    </ol>
-                </div><!-- /.col -->
-            </div><!-- /.row -->
-        </div><!-- /.container-fluid -->
-    </div>  --}}
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+            <form class="form-inline ml-0 navform ">
+                <div class="input-group input-group-sm">
+
+                    <input class="form-control form-control-navbar" type="search" placeholder="Search Emails" aria-label="Search" style="height: 35px;border-radius: 5px !important;">
+                </div>
+            </form>
+
+        </ul>
+
+        <!-- Right navbar links -->
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <div class="text_white" style="font-size: 20px;">
+                    &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                </div>
+            </li>
+            <li class="nav-item">
+                <img src="../img/Group 99.svg" alt="Avatar" id="profile_img" style="width:40px" class="float-right" />
+            </li>
+        </ul>
+    </nav>
     <!-- Main content -->
     <section class="content">
         <div class="row">
@@ -44,7 +55,27 @@
                     </div>
                     <!-- /.card-body -->
                     <div class="cart-body inbox ">
-                        <div class="row msg_box unread_msg">
+
+                        <div class="row msg_box unread_msg" onclick="window.location.href='/home/msg_box'">
+
+
+                            <div class=" col-sm-1" style="max-width: 5.333333% !important;">
+                                <img src="../img/Group 99.svg" alt="Avatar" style="width:40px;border-radius: 30%;" />
+                            </div>
+                            <div class="col-sm-9" style="">
+
+                                <h5><b>Mr.robin</b></h5>
+                                <p class="msg_subjct bold float-left">Lorem ipsum dolor :</p>
+                                <p class="float-left"> Hello. How are you today?Hello. How are you today?ss</p>
+                            </div>
+                            <div class="col-sm-2 right_align" style="">
+                                just now
+                            </div>
+
+                        </div>
+
+                        <hr style="">
+                        <div class="row msg_box unread_msg" onclick="window.location.href='/home/msg_box'">
                             <div class=" col-sm-1" style="max-width: 5.333333% !important;">
                                 <img src="../img/Group 99.svg" alt="Avatar" style="width:40px;border-radius: 30%;" />
                             </div>
@@ -59,7 +90,8 @@
                             </div>
                         </div>
                         <hr style="">
-                        <div class="row msg_box unread_msg">
+
+                        <div class="row msg_box " onclick="window.location.href='/home/msg_box'">
                             <div class=" col-sm-1" style="max-width: 5.333333% !important;">
                                 <img src="../img/Group 99.svg" alt="Avatar" style="width:40px;border-radius: 30%;" />
                             </div>
@@ -70,26 +102,10 @@
                                 <p class="float-left"> Hello. How are you today?Hello. How are you today?ss</p>
                             </div>
                             <div class="col-sm-2 right_align" style="">
-                                just now
+                                11.10
                             </div>
                         </div>
-                        <hr style="">
-                        <div class="cart-body inbox ">
-                            <div class="row msg_box ">
-                                <div class=" col-sm-1" style="max-width: 5.333333% !important;">
-                                    <img src="../img/Group 99.svg" alt="Avatar" style="width:40px;border-radius: 30%;" />
-                                </div>
-                                <div class="col-sm-9" style="">
 
-                                    <h5><b>Mr.robin</b></h5>
-                                    <p class="msg_subjct bold float-left">Lorem ipsum dolor :</p>
-                                    <p class="float-left"> Hello. How are you today?Hello. How are you today?ss</p>
-                                </div>
-                                <div class="col-sm-2 right_align" style="">
-                                    11.10
-                                </div>
-                            </div>
-                        </div>
                         <hr style="">
                     </div>
                 </div>
